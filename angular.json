@@ -21,8 +21,8 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "tsConfig": "src/tsconfig.app.json",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -57,8 +57,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -86,8 +85,8 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -102,9 +101,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -121,6 +119,46 @@
             "production": {
               "devServerTarget": "npx-videogular:serve:production"
             }
+          }
+        }
+      }
+    },
+    "@videogular/npx-videogular": {
+      "projectType": "library",
+      "root": "projects/videogular/npx-videogular",
+      "sourceRoot": "projects/videogular/npx-videogular/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/videogular/npx-videogular/tsconfig.lib.json",
+            "project": "projects/videogular/npx-videogular/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/videogular/npx-videogular/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/videogular/npx-videogular/src/test.ts",
+            "tsConfig": "projects/videogular/npx-videogular/tsconfig.spec.json",
+            "karmaConfig": "projects/videogular/npx-videogular/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/videogular/npx-videogular/tsconfig.lib.json",
+              "projects/videogular/npx-videogular/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }

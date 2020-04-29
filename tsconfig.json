@@ -1,15 +1,18 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "rootDir": ".",
     "baseUrl": "./",
+    "importHelpers": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "importHelpers": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
@@ -17,10 +20,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    ],
+    "paths": {
+      "@videogular/npx-videogular": ["projects/videogular/npx-videogular/src/public-api"],
+      "@videogular/npx-videogular/*": ["projects/videogular/npx-videogular/src/lib/*"],
+      "@angular/*": ["node_modules/@angular/*"],
+      "tslib": ["node_modules/tslib"]
+    },
+    "allowSyntheticDefaultImports": true
   }
 }
