@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-npx-videogular',
+  selector: 'lib-ngx-videogular',
   template: `
     <p>
-      npx-videogular works!
+      ngx-videogular works!
     </p>
   `,
   styles: [
   ]
 })
-export class NpxVideogularComponent implements OnInit {
+export class NgxVideogularComponent implements OnInit {
 
   constructor() { }
 

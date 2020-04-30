@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/videogular/npx-videogular",
+  "dest": "../../../dist/videogular/ngx-videogular",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

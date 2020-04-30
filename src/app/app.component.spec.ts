@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'npx-videogular'`, () => {
+  it(`should have as title 'ngx-videogular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('npx-videogular');
+    expect(app.title).toEqual('ngx-videogular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('npx-videogular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ngx-videogular app is running!');
   });
 });

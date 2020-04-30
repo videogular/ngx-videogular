@@ -22,8 +22,8 @@
       "dom"
     ],
     "paths": {
-      "@videogular/npx-videogular": ["projects/videogular/npx-videogular/src/public-api"],
-      "@videogular/npx-videogular/*": ["projects/videogular/npx-videogular/src/lib/*"],
+      "@videogular/ngx-videogular": ["projects/videogular/ngx-videogular/src/public-api"],
+      "@videogular/ngx-videogular/*": ["projects/videogular/ngx-videogular/src/lib/*"],
       "@angular/*": ["node_modules/@angular/*"],
       "tslib": ["node_modules/tslib"]
     },

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NpxVideogularComponent } from './npx-videogular.component';
+import { NgxVideogularComponent } from './ngx-videogular.component';
 
-describe('NpxVideogularComponent', () => {
-  let component: NpxVideogularComponent;
-  let fixture: ComponentFixture<NpxVideogularComponent>;
+describe('NgxVideogularComponent', () => {
+  let component: NgxVideogularComponent;
+  let fixture: ComponentFixture<NgxVideogularComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NpxVideogularComponent ]
+      declarations: [ NgxVideogularComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NpxVideogularComponent);
+    fixture = TestBed.createComponent(NgxVideogularComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

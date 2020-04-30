@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NpxVideogularService } from './npx-videogular.service';
+import { NgxVideogularService } from './ngx-videogular.service';
 
-describe('NpxVideogularService', () => {
-  let service: NpxVideogularService;
+describe('NgxVideogularService', () => {
+  let service: NgxVideogularService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NpxVideogularService);
+    service = TestBed.inject(NgxVideogularService);
   });
 
   it('should be created', () => {
