@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
-import { StreamingModule } from './streaming/streaming.module';
-import { OverlayPlayModule } from './overlay-play/overlay-play.module';
-import { ImaAdsModule } from './ima-ads/ima-ads.module';
-import { CoreModule } from './core/core.module';
-import { ControlsModule } from './controls/controls.module';
-import { BufferingModule } from './buffering/buffering.module';
+import { CommonModule } from '@angular/common';
+import { VgApiService } from './services/vg-api/vg-api.service';
+import { VgControlsHiddenService } from './services/vg-controls-hidden/vg-controls-hidden.service';
+import { VgFullscreenApiService } from './services/vg-fullscreen-api/vg-fullscreen-api.service';
+import { VgUtilsService } from './services/vg-utils/vg-utils.service';
+import { DirectivesModule } from './directives/directives.module';
+
+const modules = [
+  DirectivesModule,
+  CommonModule
+];
+
+const services = [
+  VgApiService,
+  VgControlsHiddenService,
+  VgFullscreenApiService,
+  VgUtilsService
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    StreamingModule,
-    OverlayPlayModule,
-    ImaAdsModule,
-    CoreModule,
-    ControlsModule,
-    BufferingModule,
-  ],
-  exports: [
-    StreamingModule,
-    OverlayPlayModule,
-    ImaAdsModule,
-    CoreModule,
-    ControlsModule,
-    BufferingModule,
-  ],
+  providers: [...services],
+  imports: [...modules],
+  exports: [...modules],
 })
 export class NgxVideogularModule {}
+
+// for i in media hls dash cue-points; do ng g d "vg-${i}" --flat=false; done
