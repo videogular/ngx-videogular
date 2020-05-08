@@ -1,4 +1,4 @@
-export enum VgEvents {
+export const enum VgEvents {
   VG_ABORT = 'abort',
   VG_CAN_PLAY = 'canplay',
   VG_CAN_PLAY_THROUGH = 'canplaythrough',

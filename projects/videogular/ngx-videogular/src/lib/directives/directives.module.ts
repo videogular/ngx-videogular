@@ -13,6 +13,6 @@ import { VgMediaModule } from './vg-media/vg-media.module';
     VgDashModule,
     VgCuePointsModule,
     CommonModule,
-  ],
+  ]
 })
 export class DirectivesModule {}

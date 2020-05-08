@@ -5,17 +5,18 @@ import { VgControlsHiddenService } from './services/vg-controls-hidden/vg-contro
 import { VgFullscreenApiService } from './services/vg-fullscreen-api/vg-fullscreen-api.service';
 import { VgUtilsService } from './services/vg-utils/vg-utils.service';
 import { DirectivesModule } from './directives/directives.module';
+import { VgEvents } from './services/vg-events/vg-events.service';
+import { VgStates } from './services/vg-states/vg-states.service';
 
-const modules = [
-  DirectivesModule,
-  CommonModule
-];
+const modules = [DirectivesModule, CommonModule];
 
 const services = [
   VgApiService,
   VgControlsHiddenService,
   VgFullscreenApiService,
-  VgUtilsService
+  VgUtilsService,
+  VgEvents,
+  VgStates
 ];
 
 @NgModule({

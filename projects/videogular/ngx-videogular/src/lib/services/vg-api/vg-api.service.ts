@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { IPlayable } from '@videogular/ngx-videogular/interfaces/vg-media-api.interface';
 import { VgFullscreenApiService } from '../vg-fullscreen-api/vg-fullscreen-api.service';
-import { VgStates } from '@videogular/ngx-videogular/enums/vg-states.enum';
+import { VgStates } from '../vg-states/vg-states.service';
 
 @Injectable()
 export class VgApiService {

@@ -7,8 +7,8 @@ import {
   EventEmitter,
   ElementRef,
 } from '@angular/core';
-import { VgEvents } from '@videogular/ngx-videogular/enums/vg-events.enum';
 import { Subscription, Observable, fromEvent } from 'rxjs';
+import { VgEvents } from '@videogular/ngx-videogular';
 
 @Directive({
   selector: '[vgCuePoints]',

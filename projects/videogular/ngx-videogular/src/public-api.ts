@@ -13,6 +13,8 @@ export * from './lib/services/vg-api/vg-api.service';
 export * from './lib/services/vg-controls-hidden/vg-controls-hidden.service';
 export * from './lib/services/vg-fullscreen-api/vg-fullscreen-api.service';
 export * from './lib/services/vg-utils/vg-utils.service';
+export * from './lib/services/vg-events/vg-events.service';
+export * from './lib/services/vg-states/vg-states.service';
 
 // interfaces
 export * from './lib/interfaces/bitrate-options.interface';
@@ -22,8 +24,8 @@ export * from './lib/interfaces/ihls-config.interface';
 export * from './lib/interfaces/vg-media-api.interface';
 
 // enums
-export * from './lib/enums/vg-events.enum';
-export * from './lib/enums/vg-states.enum';
+// export * from './lib/enums/vg-events.enum';
+// export * from './lib/enums/vg-states.enum';
 
 // modules
 export * from './lib/directives/vg-media/vg-media.module';
