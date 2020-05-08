@@ -9,10 +9,10 @@ import {
   ElementRef,
   SimpleChanges,
 } from '@angular/core';
-import { BitrateOptions } from '@videogular/ngx-videogular/interfaces/bitrate-options.interface';
+import { BitrateOptions } from '../../interfaces/bitrate-options.interface';
 import { Subscription } from 'rxjs';
-import { IHLSConfig } from '@videogular/ngx-videogular/interfaces/ihls-config.interface';
-import { VgApiService } from '@videogular/ngx-videogular/services/vg-api/vg-api.service';
+import { IHLSConfig } from '../../interfaces/ihls-config.interface';
+import { VgApiService } from '../../services/vg-api/vg-api.service';
 
 declare let Hls: {
   new (arg0: IHLSConfig): any;
@@ -66,13 +66,10 @@ export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
       autoStartLoad: this.preload,
     } as IHLSConfig;
     // @ts-ignore
-    this.config.xhrSetup = (
-      xhr: {
-        withCredentials: boolean;
-        setRequestHeader: (arg0: string, arg1: string) => void;
-      },
-      url: any
-    ) => {
+    this.config.xhrSetup = (xhr: {
+      withCredentials: boolean;
+      setRequestHeader: (arg0: string, arg1: string) => void;
+    }) => {
       // Send cookies
       if (this.crossorigin === 'use-credentials') {
         xhr.withCredentials = true;
@@ -123,7 +120,7 @@ export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
       // @ts-ignore
       this.hls.on(
         Hls.Events.MANIFEST_PARSED,
-        (event: any, data: { levels: any[] }) => {
+        (_event: any, data: { levels: any[] }) => {
           const videoList = [];
 
           videoList.push({
@@ -157,7 +154,7 @@ export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
       // @ts-ignore
       this.hls.on(
         Hls.Events.LEVEL_LOADED,
-        (event: any, data: { details: { live: any } }) => {
+        (_event: any, data: { details: { live: any } }) => {
           this.target.isLive = data.details.live;
         }
       );

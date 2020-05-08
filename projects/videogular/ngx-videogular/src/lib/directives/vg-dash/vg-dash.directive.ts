@@ -10,9 +10,9 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { BitrateOptions } from '@videogular/ngx-videogular/interfaces/bitrate-options.interface';
-import { IDRMLicenseServer } from '@videogular/ngx-videogular/interfaces/idrm-license-server.interface';
-import { VgApiService } from '@videogular/ngx-videogular/services/vg-api/vg-api.service';
+import { BitrateOptions } from '../../interfaces/bitrate-options.interface';
+import { IDRMLicenseServer } from '../../interfaces/idrm-license-server.interface';
+import { VgApiService } from '../../services/vg-api/vg-api.service';
 
 declare let dashjs: {
   MediaPlayer: {
