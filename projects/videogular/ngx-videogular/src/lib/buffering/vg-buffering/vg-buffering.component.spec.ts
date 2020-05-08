@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxVideogularComponent } from './ngx-videogular.component';
+import { VgBufferingComponent } from './vg-buffering.component';
 
-describe('NgxVideogularComponent', () => {
-  let component: NgxVideogularComponent;
-  let fixture: ComponentFixture<NgxVideogularComponent>;
+describe('VgBufferingComponent', () => {
+  let component: VgBufferingComponent;
+  let fixture: ComponentFixture<VgBufferingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxVideogularComponent ]
+      declarations: [ VgBufferingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxVideogularComponent);
+    fixture = TestBed.createComponent(VgBufferingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
