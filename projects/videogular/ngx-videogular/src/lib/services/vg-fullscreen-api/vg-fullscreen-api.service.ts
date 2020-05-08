@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter, QueryList } from '@angular/core';
 import { VgUtilsService } from '../vg-utils/vg-utils.service';
 import { fromEvent, Subscription } from 'rxjs';
-import { VgMediaDirective } from '@videogular/ngx-videogular/directives/vg-media/vg-media.directive';
+import { VgMediaDirective } from '../../directives/vg-media/vg-media.directive';
 
 @Injectable()
 export class VgFullscreenApiService {

@@ -14,14 +14,12 @@ import {
   combineLatest,
 } from 'rxjs';
 import { map } from 'rxjs/operators';
-import {
-  IPlayable,
-  IMediaElement,
-  VgStates,
-  IMediaSubscriptions,
-  VgApiService,
-  VgEvents,
-} from '@videogular/ngx-videogular';
+import {IPlayable, IMediaSubscriptions} from '../../interfaces/vg-media-api.interface';
+import {IMediaElement} from '../../interfaces/i-media-element.interface';
+import {VgStates} from '../../services/vg-states/vg-states.service';
+import {VgApiService} from '../../services/vg-api/vg-api.service';
+import {VgEvents} from '../../services/vg-events/vg-events.service';
+
 
 @Directive({
   selector: '[vgMedia]',
