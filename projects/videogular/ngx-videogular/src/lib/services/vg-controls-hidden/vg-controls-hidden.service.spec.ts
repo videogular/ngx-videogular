@@ -1,16 +1,30 @@
-import { TestBed } from '@angular/core/testing';
-
+import { Observable } from 'rxjs';
 import { VgControlsHiddenService } from './vg-controls-hidden.service';
 
-describe('VgControlsHiddenService', () => {
-  let service: VgControlsHiddenService;
+describe('VgControlsHidden Service', () => {
+  let controlsHidden: VgControlsHiddenService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(VgControlsHiddenService);
+    controlsHidden = new VgControlsHiddenService();
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('Should provide an Observable', () => {
+    expect(controlsHidden.isHidden).toEqual(jasmine.any(Observable));
+  });
+
+  it('Should set state to true', () => {
+    controlsHidden.isHidden.subscribe((state) => {
+      expect(state).toBe(true);
+    });
+
+    controlsHidden.state(true);
+  });
+
+  it('Should set state to false', () => {
+    controlsHidden.isHidden.subscribe((state) => {
+      expect(state).toBe(false);
+    });
+
+    controlsHidden.state(false);
   });
 });
