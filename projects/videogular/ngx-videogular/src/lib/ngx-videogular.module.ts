@@ -7,8 +7,9 @@ import { VgUtilsService } from './services/vg-utils/vg-utils.service';
 import { DirectivesModule } from './directives/directives.module';
 import { VgEvents } from './services/vg-events/vg-events.service';
 import { VgStates } from './services/vg-states/vg-states.service';
+import { UiModule } from './ui/ui.module';
 
-const modules = [DirectivesModule, CommonModule];
+const modules = [DirectivesModule, UiModule, CommonModule];
 
 const services = [
   VgApiService,
@@ -26,4 +27,5 @@ const services = [
 })
 export class NgxVideogularModule {}
 
-// for i in media hls dash cue-points; do ng g d "vg-${i}" --flat=false; done
+// for i in ; do ng g c "vg-${i}" --viewEncapsulation=None --inlineTemplate=true --inlineStyle=true; done
+// controls volume track-selector time-display scrub-bar quality-selector playback-button play-pause mute fullscreen
