@@ -1,7 +1,9 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../../dist/videogular/ngx-videogular",
+  "assets": ["./src/fonts/*"],
   "lib": {
-    "entryFile": "src/public-api.ts"
+    "entryFile": "src/public-api.ts",
+    "styleIncludePaths": ["src/fonts"]
   }
 }
