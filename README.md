@@ -1,27 +1,67 @@
-# NgxVideogular
+# Videogular
+[![travis build](https://travis-ci.org/videogular/videogular2.svg?branch=master)](https://travis-ci.org/videogular/videogular2)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2fdevs/videogular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Greenkeeper badge](https://badges.greenkeeper.io/videogular/videogular2.svg)](https://greenkeeper.io/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+**Videogular is an HTML5 video player for Angular 2.0**. Videogular is a wrapper over the HTML5 video tag, so you can just add whatever you want. This provides a very powerful, but simple to use solution, for everybody.
 
-## Development server
+You can see a demo here: https://videogular.github.io/videogular2-showroom/#/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Documentation: https://videogular.github.io/videogular2
 
-## Code scaffolding
+# How to install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get up and running quickly, check out the [getting started guide](https://videogular.github.io/videogular2/docs/getting-started/).
 
-## Build
+## NPM commands
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `start` to compile the project, execute tests and check coverage:
 
-## Running unit tests
+```
+npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `build` to compile the project:
 
-## Running end-to-end tests
+```
+npm run build
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `test` to test the project:
 
-## Further help
+```
+npm test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `coverage` to check the coverage report:
+
+```
+npm run coverage
+```
+
+To start the example app run the following commands and open http://localhost:8080:
+
+```
+cd examples
+npm install
+npm run build
+npm start
+```
+
+## Quick template
+
+[Stackblitz Template](https://stackblitz.com/edit/angular-videogular?file=app%2Fhello.component.ts)
+
+
+## Supported by
+
+Videogular wants to thank you to this companies for support this project:
+
+[![](sponsors/jetbrains.png)](https://www.jetbrains.com)
+[![](sponsors/toptal.png)](https://www.toptal.com)
+
+## Credits
+
+Videogular is a project created by [Raúl Jiménez](https://github.com/Elecash) and released under [MIT license](https://github.com/videogular/videogular2/blob/master/LICENSE).
+
+This project would not be possible without our [team members](https://github.com/orgs/videogular/people) and an [amazing community](https://github.com/videogular/videogular2/graphs/contributors),
