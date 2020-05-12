@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class VgUtilsService {
   /**
    * Inspired by Paul Irish
@@ -26,10 +28,13 @@ export class VgUtilsService {
 
   // Very simple mobile detection, not 100% reliable
   static isMobileDevice() {
-    return (
-      typeof window.screen.orientation !== 'undefined' ||
-      navigator.userAgent.indexOf('IEMobile') !== -1
-    );
+    // return (
+    //   typeof window.screen.orientation !== 'undefined' ||
+    //   navigator.userAgent.indexOf('IEMobile') !== -1
+    // );
+
+    // window.orientation is deprecated and we should use window.screen.orientation
+    return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
   }
 
   static isiOSDevice() {

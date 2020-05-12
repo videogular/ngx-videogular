@@ -8,8 +8,9 @@ import { DirectivesModule } from './directives/directives.module';
 import { VgEvents } from './services/vg-events/vg-events.service';
 import { VgStates } from './services/vg-states/vg-states.service';
 import { UiModule } from './ui/ui.module';
+import { PipesModule } from './pipes/pipes.module';
 
-const modules = [DirectivesModule, UiModule, CommonModule];
+const modules = [DirectivesModule, UiModule, CommonModule, PipesModule];
 
 const services = [
   VgApiService,

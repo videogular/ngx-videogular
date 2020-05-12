@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 
-// @Injectable({
-//   providedIn: 'root',
-// })
-
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class VgEvents {
   static VG_ABORT = 'abort';
   static VG_CAN_PLAY = 'canplay';

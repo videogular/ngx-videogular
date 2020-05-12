@@ -1,9 +1,11 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { VgFullscreenApiService } from '../vg-fullscreen-api/vg-fullscreen-api.service';
 import { VgStates } from '../vg-states/vg-states.service';
-import {IPlayable} from '../../interfaces/vg-media-api.interface';
+import { IPlayable } from '../../interfaces/vg-media-api.interface';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class VgApiService {
   medias = {}; // TODO: refactor to Set<IPlayable>
   videogularElement: any;
