@@ -49,6 +49,7 @@ export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
   checkInterval = 200;
   currentPlayPos = 0;
   lastPlayPos = 0;
+  specifiedDuration: number;
 
   checkBufferSubscription: any;
   syncSubscription: Subscription;
@@ -314,7 +315,7 @@ export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
   }
 
   get duration() {
-    return this.vgMedia.duration;
+    return this.vgMedia.duration === Infinity ? this.specifiedDuration : this.vgMedia.duration;
   }
 
   set currentTime(seconds) {

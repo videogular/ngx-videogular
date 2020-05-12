@@ -80,9 +80,7 @@ export class VgScrubBarCurrentTimeComponent implements OnInit, OnDestroy {
   }
 
   getPercentage() {
-    return this.target
-      ? (this.target.time.current * 100) / this.target.time.total + '%'
-      : '0%';
+    return this.target ? Math.round((this.target.time.current * 100) / this.target.time.total) + '%' : '0%';
   }
 
   ngOnDestroy() {
