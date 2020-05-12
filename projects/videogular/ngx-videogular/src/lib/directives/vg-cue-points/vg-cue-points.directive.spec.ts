@@ -19,6 +19,7 @@ describe('Cue points', () => {
     expect(cuePoints.onLoad$).toBeDefined();
   });
 
+  // Illegal Constructor. Any testing wizards want to open a PR for this?
   xit('Should handle enter/exit events', () => {
     const event = {
       target: document.createElement('video'),

@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 
-// @Injectable({
-//   providedIn: 'root',
-// })
-
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class VgStates {
   static VG_ENDED = 'ended';
   static VG_PAUSED = 'paused';

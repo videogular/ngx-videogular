@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VgTimeDisplayComponent } from './vg-time-display.component';
+import { PipesModule } from '../../../pipes/pipes.module';
 
 describe('VgTimeDisplayComponent', () => {
   let component: VgTimeDisplayComponent;
@@ -8,7 +9,8 @@ describe('VgTimeDisplayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VgTimeDisplayComponent ]
+      declarations: [VgTimeDisplayComponent],
+      imports: [PipesModule],
     })
     .compileComponents();
   }));

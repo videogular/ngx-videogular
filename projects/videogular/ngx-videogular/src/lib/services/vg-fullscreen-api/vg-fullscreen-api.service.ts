@@ -3,7 +3,9 @@ import { VgUtilsService } from '../vg-utils/vg-utils.service';
 import { fromEvent, Subscription } from 'rxjs';
 import { VgMediaDirective } from '../../directives/vg-media/vg-media.directive';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class VgFullscreenApiService {
   polyfill: any;
   onchange: string;
