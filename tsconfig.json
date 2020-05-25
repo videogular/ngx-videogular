@@ -16,12 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngx-videogular/vg-core": ["libs/vg-core/src/index.ts"],
-      "@ngx-videogular/vg-ima-ads": ["libs/vg-ima-ads/src/index.ts"],
-      "@ngx-videogular/vg-overlay-play": ["libs/vg-overlay-play/src/index.ts"],
-      "@ngx-videogular/vg-buffering": ["libs/vg-buffering/src/index.ts"],
-      "@ngx-videogular/vg-streaming": ["libs/vg-streaming/src/index.ts"],
-      "@ngx-videogular/vg-controls": ["libs/vg-controls/src/index.ts"]
+      "@videogular/vg-core": ["libs/vg-core/src/index.ts"],
+      "@videogular/vg-ima-ads": ["libs/vg-ima-ads/src/index.ts"],
+      "@videogular/vg-overlay-play": ["libs/vg-overlay-play/src/index.ts"],
+      "@videogular/vg-buffering": ["libs/vg-buffering/src/index.ts"],
+      "@videogular/vg-streaming": ["libs/vg-streaming/src/index.ts"],
+      "@videogular/vg-controls": ["libs/vg-controls/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

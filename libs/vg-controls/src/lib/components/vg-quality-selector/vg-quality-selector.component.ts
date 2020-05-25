@@ -11,7 +11,7 @@ import {
   EventEmitter,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { VgApiService, BitrateOptions } from '@ngx-videogular/vg-core';
+import { VgApiService, BitrateOptions } from '@videogular/vg-core';
 
 @Component({
   selector: 'vg-quality-selector',

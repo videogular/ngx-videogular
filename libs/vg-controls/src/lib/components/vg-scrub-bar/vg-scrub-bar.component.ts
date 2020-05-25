@@ -9,7 +9,7 @@ import {
   OnDestroy,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { VgControlsHiddenService, VgApiService, VgStates } from '@ngx-videogular/vg-core';
+import { VgControlsHiddenService, VgApiService, VgStates } from '@videogular/vg-core';
 
 @Component({
   selector: 'vg-scrub-bar',

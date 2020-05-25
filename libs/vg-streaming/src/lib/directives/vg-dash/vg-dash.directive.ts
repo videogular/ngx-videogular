@@ -14,7 +14,7 @@ import {
   IDRMLicenseServer,
   BitrateOptions,
   VgApiService,
-} from '@ngx-videogular/vg-core';
+} from '@videogular/vg-core';
 
 declare let dashjs: {
   MediaPlayer: {

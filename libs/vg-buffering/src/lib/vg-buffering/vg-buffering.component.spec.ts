@@ -1,6 +1,6 @@
 import { ElementRef } from '@angular/core';
 import { VgBufferingComponent } from './vg-buffering.component';
-import { VgApiService } from '@ngx-videogular/vg-core';
+import { VgApiService } from '@videogular/vg-core';
 
 describe('Buffering', () => {
   let vgBuffering: VgBufferingComponent;

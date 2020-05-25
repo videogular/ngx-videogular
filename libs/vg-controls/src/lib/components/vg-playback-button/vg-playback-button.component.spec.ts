@@ -1,6 +1,6 @@
 import { ElementRef, ChangeDetectorRef } from '@angular/core';
 import { VgPlaybackButtonComponent } from './vg-playback-button.component';
-import { VgApiService, VgStates } from '@ngx-videogular/vg-core';
+import { VgApiService, VgStates } from '@videogular/vg-core';
 
 describe('Playback Button', () => {
   let playbackButton: VgPlaybackButtonComponent;

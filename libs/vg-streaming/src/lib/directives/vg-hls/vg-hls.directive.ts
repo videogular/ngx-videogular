@@ -14,7 +14,7 @@ import {
   IHLSConfig,
   BitrateOptions,
   VgApiService,
-} from '@ngx-videogular/vg-core';
+} from '@videogular/vg-core';
 
 declare let Hls: {
   new (arg0: IHLSConfig): any;

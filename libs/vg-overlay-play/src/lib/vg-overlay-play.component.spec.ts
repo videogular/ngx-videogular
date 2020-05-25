@@ -1,6 +1,6 @@
 import { ElementRef } from '@angular/core';
 import {VgOverlayPlayComponent} from './vg-overlay-play.component';
-import {VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates} from '@ngx-videogular/vg-core';
+import {VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates} from '@videogular/vg-core';
 
 describe('Videogular Player', () => {
   let overlayPlay: VgOverlayPlayComponent;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VgBufferingComponent } from './vg-buffering/vg-buffering.component';
-import { VgCoreModule } from '@ngx-videogular/vg-core';
+import { VgCoreModule } from '@videogular/vg-core';
 
 @NgModule({
   imports: [CommonModule, VgCoreModule],

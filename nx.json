@@ -1,5 +1,5 @@
 {
-  "npmScope": "ngx-videogular",
+  "npmScope": "videogular",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": {

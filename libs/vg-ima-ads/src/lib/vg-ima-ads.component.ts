@@ -16,7 +16,7 @@ import {
   VgApiService,
   VgFullscreenApiService,
   VgEvents,
-} from '@ngx-videogular/vg-core';
+} from '@videogular/vg-core';
 
 @Component({
   selector: 'vg-ima-ads',

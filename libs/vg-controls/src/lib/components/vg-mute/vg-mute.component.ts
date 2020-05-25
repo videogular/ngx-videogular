@@ -8,7 +8,7 @@ import {
   OnDestroy,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { VgApiService } from '@ngx-videogular/vg-core';
+import { VgApiService } from '@videogular/vg-core';
 
 @Component({
   selector: 'vg-mute',

@@ -10,7 +10,7 @@ import { VgPlaybackButtonComponent } from './components/vg-playback-button/vg-pl
 import { VgPlayPauseComponent } from './components/vg-play-pause/vg-play-pause.component';
 import { VgMuteComponent } from './components/vg-mute/vg-mute.component';
 import { VgFullscreenComponent } from './components/vg-fullscreen/vg-fullscreen.component';
-import { VgCoreModule } from '@ngx-videogular/vg-core';
+import { VgCoreModule } from '@videogular/vg-core';
 import { VgScrubBarBufferingTimeComponent } from './components/vg-scrub-bar/vg-scrub-bar-buffering-time/vg-scrub-bar-buffering-time.component';
 import { VgScrubBarCuePointsComponent } from './components/vg-scrub-bar/vg-scrub-bar-cue-points/vg-scrub-bar-cue-points.component';
 import { VgScrubBarCurrentTimeComponent } from './components/vg-scrub-bar/vg-scrub-bar-current-time/vg-scrub-bar-current-time.component';

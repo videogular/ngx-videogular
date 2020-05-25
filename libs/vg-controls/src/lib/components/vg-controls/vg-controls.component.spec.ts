@@ -1,6 +1,6 @@
 import { ElementRef } from '@angular/core';
 import { VgControlsComponent } from './vg-controls.component';
-import { VgApiService, VgControlsHiddenService, VgStates } from '@ngx-videogular/vg-core';
+import { VgApiService, VgControlsHiddenService, VgStates } from '@videogular/vg-core';
 
 describe('Controls Bar', () => {
   let controls: VgControlsComponent;

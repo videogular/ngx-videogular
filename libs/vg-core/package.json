@@ -1,5 +1,5 @@
 {
-  "name": "@ngx-videogular/vg-core",
+  "name": "@videogular/vg-core",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.0",

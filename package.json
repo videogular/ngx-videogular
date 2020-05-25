@@ -1,11 +1,18 @@
 {
-  "name": "ngx-videogular",
-  "version": "0.0.0",
+  "name": "videogular",
+  "version": "0.0.1",
   "license": "MIT",
   "author": {
     "name": "Jaime Oliveira",
     "email": "jaime.amo18@gmail.com"
   },
+  "keywords": [
+    "video",
+    "player",
+    "framework",
+    "angular2",
+    "javascript"
+  ],
   "scripts": {
     "ng": "ng",
     "nx": "nx",
@@ -31,6 +38,45 @@
     "help": "nx help",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "ci"
+      ],
+      "scope": {
+        "required": true,
+        "allowed": [
+          "*"
+        ],
+        "validate": true,
+        "multiple": false
+      },
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": "",
+      "autoFix": false
+    }
+  },
   "private": true,
   "dependencies": {
     "@nrwl/angular": "^9.3.0",
@@ -48,30 +94,34 @@
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "0.901.0",
     "@angular-devkit/build-ng-packagr": "~0.901.0",
     "@angular/cli": "9.1.0",
-    "@nrwl/workspace": "9.3.0",
-    "@types/node": "~8.9.4",
-    "dotenv": "6.2.0",
-    "ng-packagr": "^9.0.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~6.0.0",
-    "eslint": "6.8.0",
-    "typescript": "~3.8.3",
-    "prettier": "2.0.4",
     "@angular/compiler-cli": "^9.1.0",
     "@angular/language-service": "^9.1.0",
-    "@angular-devkit/build-angular": "0.901.0",
+    "@nrwl/workspace": "9.3.0",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
+    "dotenv": "6.2.0",
+    "eslint": "6.8.0",
+    "husky": "4.2.5",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "@types/jasmine": "~2.8.8",
+    "ng-packagr": "^9.0.0",
+    "prettier": "2.0.4",
     "protractor": "~5.4.0",
-    "@types/jasminewd2": "~2.0.3"
+    "semantic-release": "17.0.7",
+    "ts-node": "~7.0.0",
+    "tslint": "~6.0.0",
+    "typescript": "~3.8.3",
+    "validate-commit-msg": "2.12.1",
+    "commitizen": "4.1.2"
   }
 }

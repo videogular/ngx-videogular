@@ -1,9 +1,10 @@
 {
-  "name": "@ngx-videogular/vg-ima-ads",
+  "name": "@videogular/vg-ima-ads",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.0",
     "@angular/core": "^9.1.0",
-    "tslib": "^1.10.0"
+    "tslib": "^1.10.0",
+    "@videogular/core": "^0.0.1"
   }
 }

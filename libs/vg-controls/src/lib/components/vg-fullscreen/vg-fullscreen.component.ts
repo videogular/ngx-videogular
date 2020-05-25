@@ -7,7 +7,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { VgApiService, VgFullscreenApiService } from '@ngx-videogular/vg-core';
+import { VgApiService, VgFullscreenApiService } from '@videogular/vg-core';
 
 @Component({
   selector: 'vg-fullscreen',

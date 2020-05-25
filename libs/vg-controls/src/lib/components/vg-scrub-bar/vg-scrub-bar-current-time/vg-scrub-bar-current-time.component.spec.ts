@@ -1,6 +1,6 @@
 import { ElementRef } from '@angular/core';
 import { VgScrubBarCurrentTimeComponent } from './vg-scrub-bar-current-time.component';
-import { VgApiService } from '@ngx-videogular/vg-core';
+import { VgApiService } from '@videogular/vg-core';
 
 describe('Scrub bar current time', () => {
   let scrubBarCurrentTime: VgScrubBarCurrentTimeComponent;

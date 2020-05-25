@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VgDashDirective } from './directives/vg-dash/vg-dash.directive';
 import { VgHlsDirective } from './directives/vg-hls/vg-hls.directive';
-import { VgCoreModule } from '@ngx-videogular/vg-core';
+import { VgCoreModule } from '@videogular/vg-core';
 
 @NgModule({
   imports: [CommonModule, VgCoreModule],
