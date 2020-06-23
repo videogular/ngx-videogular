@@ -6,6 +6,14 @@
     "name": "Jaime Oliveira",
     "email": "jaime.amo18@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/videogular/ngx-videogular.git"
+  },
+	"bugs": {
+		"url": "https://github.com/videogular/ngx-videogular/issues"
+	},
+  "homepage": "https://github.com/videogular/ngx-videogular#readme",
   "keywords": [
     "video",
     "player",
@@ -17,7 +25,8 @@
     "ng": "ng",
     "nx": "nx",
     "start": "ng serve",
-    "build": "nx run-many --target=build --all",
+    "build": "ng build",
+    "build-all": "nx run-many --target=build --all",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
@@ -36,7 +45,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
+    "postinstall": "ngcc"
   },
   "husky": {
     "hooks": {
@@ -77,7 +86,10 @@
       "autoFix": false
     }
   },
-  "private": true,
+  "release": {
+    "branches": ["master", "next"]
+  },
+  "private": false,
   "dependencies": {
     "@nrwl/angular": "^9.3.0",
     "@angular/animations": "^9.1.0",
@@ -104,6 +116,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
+    "commitizen": "4.1.2",
     "dotenv": "6.2.0",
     "eslint": "6.8.0",
     "husky": "4.2.5",
@@ -115,13 +128,13 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^9.0.0",
+    "nx-semantic-release": "0.1.2",
     "prettier": "2.0.4",
     "protractor": "~5.4.0",
     "semantic-release": "17.0.7",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
     "typescript": "~3.8.3",
-    "validate-commit-msg": "2.12.1",
-    "commitizen": "4.1.2"
+    "validate-commit-msg": "2.12.1"
   }
 }
