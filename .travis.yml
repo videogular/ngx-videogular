@@ -9,18 +9,14 @@ notifications:
 node_js:
   - "lts/*"
 before_install:
-  - npm i -g npm@^3.0.0
+  - nvm install lts/*
   - sleep 1
 before_script:
   - npm prune
 script:
-  - npm run build:travis
-  - cd docs
-  - npm install
-  - npm run build
-  - cd ..
+  - npm run affected:libs
 after_success:
-  - npm run semantic-release
+  - npx semantic-release
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
 branches:
   only:

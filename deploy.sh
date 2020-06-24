@@ -19,7 +19,7 @@ git init
 git config user.name "Raul Jimenez"
 git config user.email "elecash@gmail.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/videogular/videogular2.git"
+git remote add upstream "https://$GH_TOKEN@github.com/videogular/ngx-videogular.git"
 git fetch upstream
 git reset upstream/gh-pages
 

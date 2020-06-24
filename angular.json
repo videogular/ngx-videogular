@@ -25,7 +25,9 @@
               "apps/ngx-videogular/src/favicon.ico",
               "apps/ngx-videogular/src/assets"
             ],
-            "styles": ["apps/ngx-videogular/src/styles.scss"],
+            "styles": [
+              "apps/ngx-videogular/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +85,10 @@
               "apps/ngx-videogular/tsconfig.app.json",
               "apps/ngx-videogular/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ngx-videogular/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ngx-videogular/**"
+            ]
           }
         },
         "test": {
@@ -120,7 +125,10 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/ngx-videogular-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**", "!apps/ngx-videogular-e2e/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ngx-videogular-e2e/**"
+            ]
           }
         }
       }
@@ -150,7 +158,10 @@
               "libs/vg-core/tsconfig.lib.json",
               "libs/vg-core/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/vg-core/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/vg-core/**"
+            ]
           }
         },
         "test": {
@@ -159,6 +170,12 @@
             "main": "libs/vg-core/src/test.ts",
             "tsConfig": "libs/vg-core/tsconfig.spec.json",
             "karmaConfig": "libs/vg-core/karma.conf.js"
+          }
+        },
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
+          "options": {
+            "access": "public"
           }
         }
       },
@@ -193,7 +210,10 @@
               "libs/vg-ima-ads/tsconfig.lib.json",
               "libs/vg-ima-ads/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/vg-ima-ads/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/vg-ima-ads/**"
+            ]
           }
         },
         "test": {
@@ -202,6 +222,12 @@
             "main": "libs/vg-ima-ads/src/test.ts",
             "tsConfig": "libs/vg-ima-ads/tsconfig.spec.json",
             "karmaConfig": "libs/vg-ima-ads/karma.conf.js"
+          }
+        },
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
+          "options": {
+            "access": "public"
           }
         }
       },
@@ -236,7 +262,10 @@
               "libs/vg-overlay-play/tsconfig.lib.json",
               "libs/vg-overlay-play/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/vg-overlay-play/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/vg-overlay-play/**"
+            ]
           }
         },
         "test": {
@@ -245,6 +274,12 @@
             "main": "libs/vg-overlay-play/src/test.ts",
             "tsConfig": "libs/vg-overlay-play/tsconfig.spec.json",
             "karmaConfig": "libs/vg-overlay-play/karma.conf.js"
+          }
+        },
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
+          "options": {
+            "access": "public"
           }
         }
       },
@@ -279,7 +314,10 @@
               "libs/vg-buffering/tsconfig.lib.json",
               "libs/vg-buffering/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/vg-buffering/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/vg-buffering/**"
+            ]
           }
         },
         "test": {
@@ -288,6 +326,12 @@
             "main": "libs/vg-buffering/src/test.ts",
             "tsConfig": "libs/vg-buffering/tsconfig.spec.json",
             "karmaConfig": "libs/vg-buffering/karma.conf.js"
+          }
+        },
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
+          "options": {
+            "access": "public"
           }
         }
       },
@@ -322,7 +366,10 @@
               "libs/vg-streaming/tsconfig.lib.json",
               "libs/vg-streaming/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/vg-streaming/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/vg-streaming/**"
+            ]
           }
         },
         "test": {
@@ -331,6 +378,12 @@
             "main": "libs/vg-streaming/src/test.ts",
             "tsConfig": "libs/vg-streaming/tsconfig.spec.json",
             "karmaConfig": "libs/vg-streaming/karma.conf.js"
+          }
+        },
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
+          "options": {
+            "access": "public"
           }
         }
       },
@@ -365,7 +418,10 @@
               "libs/vg-controls/tsconfig.lib.json",
               "libs/vg-controls/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/vg-controls/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/vg-controls/**"
+            ]
           }
         },
         "test": {
@@ -374,6 +430,12 @@
             "main": "libs/vg-controls/src/test.ts",
             "tsConfig": "libs/vg-controls/tsconfig.spec.json",
             "karmaConfig": "libs/vg-controls/karma.conf.js"
+          }
+        },
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
+          "options": {
+            "access": "public"
           }
         }
       },

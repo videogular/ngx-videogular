@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/videogular/ngx-videogular.git"
   },
-	"bugs": {
-		"url": "https://github.com/videogular/ngx-videogular/issues"
-	},
+  "bugs": {
+    "url": "https://github.com/videogular/ngx-videogular/issues"
+  },
   "homepage": "https://github.com/videogular/ngx-videogular#readme",
   "keywords": [
     "video",
@@ -85,9 +85,6 @@
       "helpMessage": "",
       "autoFix": false
     }
-  },
-  "release": {
-    "branches": ["master", "next"]
   },
   "private": false,
   "dependencies": {
