@@ -19,29 +19,14 @@
     }
   },
   "projects": {
-    "ngx-videogular": {
+    "ngx-videogular-demo": {
       "tags": []
     },
     "ngx-videogular-e2e": {
       "tags": [],
       "implicitDependencies": ["ngx-videogular"]
     },
-    "core": {
-      "tags": []
-    },
-    "ima-ads": {
-      "tags": []
-    },
-    "overlay-play": {
-      "tags": []
-    },
-    "buffering": {
-      "tags": []
-    },
-    "streaming": {
-      "tags": []
-    },
-    "controls": {
+    "ngx-videogular": {
       "tags": []
     }
   }

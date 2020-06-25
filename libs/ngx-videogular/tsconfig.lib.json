@@ -1,0 +1,46 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib/ngx-videogular/*",
+    "rootDir": "..",
+    "baseUrl": ".",
+    "target": "es5",
+    "module": "es2015",
+    "stripInternal": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "skipDefaultLibCheck": true,
+    "lib": ["es2015", "dom"],
+    "types": [],
+    "paths": {
+      "@angular/*": [
+        "node_modules/@angular/*"
+      ],
+      "@videogular/ngx-videogular/*": ["../../out-tsc/lib/ngx-videogular/*"],
+    }
+  },
+  "files": [
+    "public-api.ts"
+  ],
+  "include": ["**/*.ts"],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "../apps"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": false,
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true,
+    "flatModuleOutFile": "videogular-ngx-videogular.js",
+    "flatModuleId": "@videogular/ngx-videogular",
+    "skipTemplateCodegen": true
+  }
+}

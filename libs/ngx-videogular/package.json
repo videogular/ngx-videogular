@@ -1,0 +1,51 @@
+{
+  "name": "@videogular/ngx-videogular",
+  "version": "0.0.1",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^9.0.4",
+    "@angular/core": "^9.0.4"
+  },
+  "module": "videogular-ngx-videogular.es5.js",
+  "es2015": "videogular-ngx-videogular.js",
+  "typings": "videogular-ngx-videogular.d.ts",
+  "dependencies": {
+    "tslib": "^1.11.1"
+  },
+  "sideEffects": false,
+  "release": {
+    "prepare": [
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": ["package.json", "../dist/**/*.{js|ts}", "docs"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "verifyConditions": [
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/npm"
+    ]
+  },
+  "author": {
+    "name": "Jaime Oliveira",
+    "email": "jaime.amo18@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/videogular/ngx-videogular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/videogular/ngx-videogular/issues"
+  },
+  "homepage": "https://github.com/videogular/ngx-videogular#readme",
+  "keywords": [
+    "video",
+    "player",
+    "framework",
+    "angular2",
+    "javascript"
+  ]
+}
