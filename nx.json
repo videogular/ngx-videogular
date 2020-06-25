@@ -26,22 +26,22 @@
       "tags": [],
       "implicitDependencies": ["ngx-videogular"]
     },
-    "vg-core": {
+    "core": {
       "tags": []
     },
-    "vg-ima-ads": {
+    "ima-ads": {
       "tags": []
     },
-    "vg-overlay-play": {
+    "overlay-play": {
       "tags": []
     },
-    "vg-buffering": {
+    "buffering": {
       "tags": []
     },
-    "vg-streaming": {
+    "streaming": {
       "tags": []
     },
-    "vg-controls": {
+    "controls": {
       "tags": []
     }
   }

@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { VgCoreModule } from '@videogular/vg-core';
-import { VgStreamingModule } from '@videogular/vg-streaming';
-import { VgOverlayPlayModule } from '@videogular/vg-overlay-play';
-import { VgImaAdsModule } from '@videogular/vg-ima-ads';
-import { VgControlsModule } from '@videogular/vg-controls';
-import { VgBufferingModule } from '@videogular/vg-buffering';
+import { CoreModule } from '@videogular/ngx-videogular/core';
+import { StreamingModule } from '@videogular/ngx-videogular/streaming';
+import { OverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { ImaAdsModule } from '@videogular/ngx-videogular/ima-ads';
+import { ControlsModule } from '@videogular/ngx-videogular/controls';
+import { BufferingModule } from '@videogular/ngx-videogular/buffering';
 
 import { AppComponent } from './app.component';
 
@@ -13,12 +13,12 @@ import { AppComponent } from './app.component';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    VgCoreModule,
-    VgStreamingModule,
-    VgOverlayPlayModule,
-    VgImaAdsModule,
-    VgControlsModule,
-    VgBufferingModule,
+    CoreModule,
+    StreamingModule,
+    OverlayPlayModule,
+    ImaAdsModule,
+    ControlsModule,
+    BufferingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

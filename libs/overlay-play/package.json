@@ -1,0 +1,11 @@
+{
+  "name": "@videogular/ngx-videogular/overlay-play",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.1.0",
+    "@angular/core": "^9.1.0"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}

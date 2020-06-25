@@ -16,13 +16,26 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@videogular/vg-core": ["libs/vg-core/src/index.ts"],
-      "@videogular/vg-ima-ads": ["libs/vg-ima-ads/src/index.ts"],
-      "@videogular/vg-overlay-play": ["libs/vg-overlay-play/src/index.ts"],
-      "@videogular/vg-buffering": ["libs/vg-buffering/src/index.ts"],
-      "@videogular/vg-streaming": ["libs/vg-streaming/src/index.ts"],
-      "@videogular/vg-controls": ["libs/vg-controls/src/index.ts"]
+      "@videogular/ngx-videogular": ["./libs/ngx-videogular/src/public-api.ts"],
+      "@videogular/ngx-videogular/core": ["libs/ngx-videogular/core/src/index.ts"],
+      "@videogular/ngx-videogular/ima-ads": ["libs/ngx-videogular/ima-ads/src/index.ts"],
+      "@videogular/ngx-videogular/overlay-play": ["libs/ngx-videogular/overlay-play/src/index.ts"],
+      "@videogular/ngx-videogular/buffering": ["libs/ngx-videogular/buffering/src/index.ts"],
+      "@videogular/ngx-videogular/streaming": ["libs/ngx-videogular/streaming/src/index.ts"],
+      "@videogular/ngx-videogular/controls": ["libs/ngx-videogular/controls/src/index.ts"]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "include": [
+    "libs/**/*.ts",
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": false,
+    "annotateForClosureCompiler": true,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true
+  }
 }

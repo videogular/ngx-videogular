@@ -133,21 +133,21 @@
         }
       }
     },
-    "vg-core": {
+    "core": {
       "projectType": "library",
-      "root": "libs/vg-core",
-      "sourceRoot": "libs/vg-core/src",
+      "root": "libs/core",
+      "sourceRoot": "libs/core/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/vg-core/tsconfig.lib.json",
-            "project": "libs/vg-core/ng-package.json"
+            "tsConfig": "libs/core/tsconfig.lib.json",
+            "project": "libs/core/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/vg-core/tsconfig.lib.prod.json"
+              "tsConfig": "libs/core/tsconfig.lib.prod.json"
             }
           }
         },
@@ -155,21 +155,21 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/vg-core/tsconfig.lib.json",
-              "libs/vg-core/tsconfig.spec.json"
+              "libs/core/tsconfig.lib.json",
+              "libs/core/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/vg-core/**"
+              "!libs/core/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/vg-core/src/test.ts",
-            "tsConfig": "libs/vg-core/tsconfig.spec.json",
-            "karmaConfig": "libs/vg-core/karma.conf.js"
+            "main": "libs/core/src/test.ts",
+            "tsConfig": "libs/core/tsconfig.spec.json",
+            "karmaConfig": "libs/core/karma.conf.js"
           }
         },
         "deploy": {
@@ -185,21 +185,21 @@
         }
       }
     },
-    "vg-ima-ads": {
+    "ima-ads": {
       "projectType": "library",
-      "root": "libs/vg-ima-ads",
-      "sourceRoot": "libs/vg-ima-ads/src",
+      "root": "libs/ima-ads",
+      "sourceRoot": "libs/ima-ads/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/vg-ima-ads/tsconfig.lib.json",
-            "project": "libs/vg-ima-ads/ng-package.json"
+            "tsConfig": "libs/ima-ads/tsconfig.lib.json",
+            "project": "libs/ima-ads/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/vg-ima-ads/tsconfig.lib.prod.json"
+              "tsConfig": "libs/ima-ads/tsconfig.lib.prod.json"
             }
           }
         },
@@ -207,21 +207,21 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/vg-ima-ads/tsconfig.lib.json",
-              "libs/vg-ima-ads/tsconfig.spec.json"
+              "libs/ima-ads/tsconfig.lib.json",
+              "libs/ima-ads/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/vg-ima-ads/**"
+              "!libs/ima-ads/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/vg-ima-ads/src/test.ts",
-            "tsConfig": "libs/vg-ima-ads/tsconfig.spec.json",
-            "karmaConfig": "libs/vg-ima-ads/karma.conf.js"
+            "main": "libs/ima-ads/src/test.ts",
+            "tsConfig": "libs/ima-ads/tsconfig.spec.json",
+            "karmaConfig": "libs/ima-ads/karma.conf.js"
           }
         },
         "deploy": {
@@ -237,21 +237,21 @@
         }
       }
     },
-    "vg-overlay-play": {
+    "overlay-play": {
       "projectType": "library",
-      "root": "libs/vg-overlay-play",
-      "sourceRoot": "libs/vg-overlay-play/src",
+      "root": "libs/overlay-play",
+      "sourceRoot": "libs/overlay-play/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/vg-overlay-play/tsconfig.lib.json",
-            "project": "libs/vg-overlay-play/ng-package.json"
+            "tsConfig": "libs/overlay-play/tsconfig.lib.json",
+            "project": "libs/overlay-play/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/vg-overlay-play/tsconfig.lib.prod.json"
+              "tsConfig": "libs/overlay-play/tsconfig.lib.prod.json"
             }
           }
         },
@@ -259,21 +259,21 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/vg-overlay-play/tsconfig.lib.json",
-              "libs/vg-overlay-play/tsconfig.spec.json"
+              "libs/overlay-play/tsconfig.lib.json",
+              "libs/overlay-play/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/vg-overlay-play/**"
+              "!libs/overlay-play/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/vg-overlay-play/src/test.ts",
-            "tsConfig": "libs/vg-overlay-play/tsconfig.spec.json",
-            "karmaConfig": "libs/vg-overlay-play/karma.conf.js"
+            "main": "libs/overlay-play/src/test.ts",
+            "tsConfig": "libs/overlay-play/tsconfig.spec.json",
+            "karmaConfig": "libs/overlay-play/karma.conf.js"
           }
         },
         "deploy": {
@@ -289,21 +289,21 @@
         }
       }
     },
-    "vg-buffering": {
+    "buffering": {
       "projectType": "library",
-      "root": "libs/vg-buffering",
-      "sourceRoot": "libs/vg-buffering/src",
+      "root": "libs/buffering",
+      "sourceRoot": "libs/buffering/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/vg-buffering/tsconfig.lib.json",
-            "project": "libs/vg-buffering/ng-package.json"
+            "tsConfig": "libs/buffering/tsconfig.lib.json",
+            "project": "libs/buffering/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/vg-buffering/tsconfig.lib.prod.json"
+              "tsConfig": "libs/buffering/tsconfig.lib.prod.json"
             }
           }
         },
@@ -311,21 +311,21 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/vg-buffering/tsconfig.lib.json",
-              "libs/vg-buffering/tsconfig.spec.json"
+              "libs/buffering/tsconfig.lib.json",
+              "libs/buffering/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/vg-buffering/**"
+              "!libs/buffering/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/vg-buffering/src/test.ts",
-            "tsConfig": "libs/vg-buffering/tsconfig.spec.json",
-            "karmaConfig": "libs/vg-buffering/karma.conf.js"
+            "main": "libs/buffering/src/test.ts",
+            "tsConfig": "libs/buffering/tsconfig.spec.json",
+            "karmaConfig": "libs/buffering/karma.conf.js"
           }
         },
         "deploy": {
@@ -341,21 +341,21 @@
         }
       }
     },
-    "vg-streaming": {
+    "streaming": {
       "projectType": "library",
-      "root": "libs/vg-streaming",
-      "sourceRoot": "libs/vg-streaming/src",
+      "root": "libs/streaming",
+      "sourceRoot": "libs/streaming/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/vg-streaming/tsconfig.lib.json",
-            "project": "libs/vg-streaming/ng-package.json"
+            "tsConfig": "libs/streaming/tsconfig.lib.json",
+            "project": "libs/streaming/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/vg-streaming/tsconfig.lib.prod.json"
+              "tsConfig": "libs/streaming/tsconfig.lib.prod.json"
             }
           }
         },
@@ -363,21 +363,21 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/vg-streaming/tsconfig.lib.json",
-              "libs/vg-streaming/tsconfig.spec.json"
+              "libs/streaming/tsconfig.lib.json",
+              "libs/streaming/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/vg-streaming/**"
+              "!libs/streaming/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/vg-streaming/src/test.ts",
-            "tsConfig": "libs/vg-streaming/tsconfig.spec.json",
-            "karmaConfig": "libs/vg-streaming/karma.conf.js"
+            "main": "libs/streaming/src/test.ts",
+            "tsConfig": "libs/streaming/tsconfig.spec.json",
+            "karmaConfig": "libs/streaming/karma.conf.js"
           }
         },
         "deploy": {
@@ -393,21 +393,21 @@
         }
       }
     },
-    "vg-controls": {
+    "controls": {
       "projectType": "library",
-      "root": "libs/vg-controls",
-      "sourceRoot": "libs/vg-controls/src",
+      "root": "libs/controls",
+      "sourceRoot": "libs/controls/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/vg-controls/tsconfig.lib.json",
-            "project": "libs/vg-controls/ng-package.json"
+            "tsConfig": "libs/controls/tsconfig.lib.json",
+            "project": "libs/controls/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/vg-controls/tsconfig.lib.prod.json"
+              "tsConfig": "libs/controls/tsconfig.lib.prod.json"
             }
           }
         },
@@ -415,21 +415,21 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/vg-controls/tsconfig.lib.json",
-              "libs/vg-controls/tsconfig.spec.json"
+              "libs/controls/tsconfig.lib.json",
+              "libs/controls/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/vg-controls/**"
+              "!libs/controls/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/vg-controls/src/test.ts",
-            "tsConfig": "libs/vg-controls/tsconfig.spec.json",
-            "karmaConfig": "libs/vg-controls/karma.conf.js"
+            "main": "libs/controls/src/test.ts",
+            "tsConfig": "libs/controls/tsconfig.spec.json",
+            "karmaConfig": "libs/controls/karma.conf.js"
           }
         },
         "deploy": {
