@@ -1,40 +1,28 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
+    "baseUrl": "./",
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": false,
     "experimentalDecorators": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-    "target": "es5",
-    "module": "es2015",
+    "inlineSourceMap": true,
+		"inlineSources": true,
+    "target": "es2015",
+    "module": "esnext",
     "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "lib": ["es2018", "dom"],
     "importHelpers": true,
-    "paths": {
-      "@videogular/ngx-videogular": ["./libs/ngx-videogular/src/index.ts"],
-      "@videogular/ngx-videogular/core": ["./libs/ngx-videogular/core/src/index.ts"],
-      "@videogular/ngx-videogular/ima-ads": ["./libs/ngx-videogular/ima-ads/src/index.ts"],
-      "@videogular/ngx-videogular/overlay-play": ["./libs/ngx-videogular/overlay-play/src/index.ts"],
-      "@videogular/ngx-videogular/buffering": ["./libs/ngx-videogular/buffering/src/index.ts"],
-      "@videogular/ngx-videogular/streaming": ["./libs/ngx-videogular/streaming/src/index.ts"],
-      "@videogular/ngx-videogular/controls": ["./libs/ngx-videogular/controls/src/index.ts"]
-    }
+    // "paths": {
+    //   "@videogular/ngx-videogular": ["libs/ngx-videogular/index.ts"],
+    //   "@videogular/ngx-videogular/core": ["libs/ngx-videogular/core/src/index.ts"],
+    //   "@videogular/ngx-videogular/ima-ads": ["libs/ngx-videogular/ima-ads/src/index.ts"],
+    //   "@videogular/ngx-videogular/overlay-play": ["libs/ngx-videogular/overlay-play/src/index.ts"],
+    //   "@videogular/ngx-videogular/buffering": ["libs/ngx-videogular/buffering/src/index.ts"],
+    //   "@videogular/ngx-videogular/streaming": ["libs/ngx-videogular/streaming/src/index.ts"],
+    //   "@videogular/ngx-videogular/controls": ["libs/ngx-videogular/controls/src/index.ts"]
+    // }
   },
-  "exclude": ["node_modules", "tmp"],
-  "include": [
-    "libs/**/*.ts",
-  ],
-  "angularCompilerOptions": {
-    "enableIvy": false,
-    "annotateForClosureCompiler": true,
-    "skipTemplateCodegen": true,
-    "strictMetadataEmit": true,
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
-    "enableResourceInlining": true
-  }
+  "exclude": ["node_modules", "tmp"]
 }
