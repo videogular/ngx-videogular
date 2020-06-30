@@ -3,7 +3,7 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2fdevs/videogular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Greenkeeper badge](https://badges.greenkeeper.io/videogular/videogular2.svg)](https://greenkeeper.io/)
 
-**Videogular is an HTML5 video player for Angular 2.0**. Videogular is a wrapper over the HTML5 video tag, so you can just add whatever you want. This provides a very powerful, but simple to use solution, for everybody.
+**Ngx-Videogular is an HTML5 video player for Angular 2.0**. Videogular is a wrapper over the HTML5 video tag, so you can just add whatever you want. This provides a very powerful, but simple to use solution, for everybody.
 
 You can see a demo here: https://videogular.github.io/videogular2-showroom/#/
 

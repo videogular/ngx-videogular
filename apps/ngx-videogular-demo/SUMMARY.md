@@ -13,7 +13,7 @@
 
 ### Modules
 
-* [videogular2/core](modules/core/README.md)
+* [ngx-videogular/core](modules/core/README.md)
     * [VgPlayer](modules/core/vg-player/README.md)
     * [VgMedia](modules/core/vg-media/README.md)
     * [VgAPI](modules/core/services/vg-api/README.md)
@@ -25,10 +25,10 @@
     * [VgStates](modules/core/states/README.md)
     * [BitrateOption](modules/core/bitrate-option/README.md)
 
-* [videogular2/buffering](modules/buffering/README.md)
+* [ngx-videogular/buffering](modules/buffering/README.md)
     * [VgBuffering](modules/buffering/vg-buffering/README.md)
 
-* [videogular2/controls](modules/controls/README.md)
+* [ngx-videogular/controls](modules/controls/README.md)
     * [VgControls](modules/controls/vg-controls/README.md)
     * [VgPlayPause](modules/controls/vg-play-pause/README.md)
     * [VgPlaybackButton](modules/controls/vg-playback/README.md)
@@ -44,13 +44,13 @@
     * [VgVolume](modules/controls/vg-volume/README.md)
     * [VgFullscreen](modules/controls/vg-fullscreen/README.md)
 
-* [videogular2/ima-ads](modules/ima-ads/README.md)
+* [ngx-videogular/ima-ads](modules/ima-ads/README.md)
     * [VgImaAds](modules/ima-ads/vg-ima-ads/README.md)
 
-* [videogular2/overlay-play](modules/overlay-play/README.md)
+* [ngx-videogular/overlay-play](modules/overlay-play/README.md)
     * [VgOverlayPlay](modules/overlay-play/vg-overlay-play/README.md)
 
-* [videogular2/streaming](modules/streaming/README.md)
+* [ngx-videogular/streaming](modules/streaming/README.md)
     * [VgDASH](modules/streaming/vg-dash/README.md)
     * [VgHLS](modules/streaming/vg-hls/README.md)
 

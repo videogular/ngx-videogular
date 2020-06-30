@@ -6,9 +6,10 @@
     "@angular/common": "^9.0.4",
     "@angular/core": "^9.0.4"
   },
-  "module": "videogular-ngx-videogular.es5.js",
-  "es2015": "videogular-ngx-videogular.js",
-  "typings": "videogular-ngx-videogular.d.ts",
+  "main": "./bundles/videogular-ngx-videogular.umd.js",
+  "module": "./esm5/videogular-ngx-videogular.es5.js",
+  "es2015": "./esm2015/videogular-ngx-videogular.js",
+  "typings": "./videogular-ngx-videogular.d.ts",
   "dependencies": {
     "tslib": "^1.11.1"
   },

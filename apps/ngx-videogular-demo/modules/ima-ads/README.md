@@ -1,4 +1,4 @@
-## videogular2/ima-ads
+## ngx-videogular/ima-ads
 
 Module to display VAST compatible advertisement with [Google IMA library](https://developers.google.com/interactive-media-ads/docs/sdks/html5/).
 
@@ -26,7 +26,7 @@ Import definition:
 
 ```typescript
 ...
-import { VgImaAdsModule } from 'videogular2/ima-ads';
+import { VgImaAdsModule } from '@videogular/ngx-videogular/ima-ads';
 
 @NgModule({
     ...

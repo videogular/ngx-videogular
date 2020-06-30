@@ -103,6 +103,12 @@
             "scripts": [],
             "assets": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "name": "Ngx-Videogular"
+          }
         }
       }
     },

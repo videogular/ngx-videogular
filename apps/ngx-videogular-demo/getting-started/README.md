@@ -7,16 +7,16 @@ ng new single-media-player --style=scss
 
 ```
 
-Now you can install the `videogular2` library and `core-js` typings:
+Now you can install the `ngx-videogular` library and `core-js` typings:
 
 ```bash
-npm install videogular2 --save
+npm install @videogular/ngx-videogular --save
 npm install @types/core-js --save-dev
 ```
 
 ## Adding the icon font
 
-If you want to, you can use the official Videogular font to set icons on your buttons and controls. To do that you need to add a CSS on you `.angular-cli.json` file available on the root of your project.
+If you want to, you can use the official Videogular font to set icons on your buttons and controls. To do that you need to add a CSS on you `.angular.json` file available on the root of your project.
 
 ```json
 {
@@ -46,10 +46,10 @@ Open `src/app/app.module.ts` and remove the FormsModule and the HttpModule, we w
 ```typescript
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {VgCoreModule} from 'videogular2/core';
-import {VgControlsModule} from 'videogular2/controls';
-import {VgOverlayPlayModule} from 'videogular2/overlay-play';
-import {VgBufferingModule} from 'videogular2/buffering';
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import {SingleMediaPlayer} from './single-media-player';
 
 @NgModule({
