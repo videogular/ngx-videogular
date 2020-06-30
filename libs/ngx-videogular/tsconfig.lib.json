@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/lib/ngx-videogular",
+    "outDir": "../../dist/libs/ngx-videogular",
     "baseUrl": ".",
     "target": "es2015",
     "module": "esnext",
@@ -17,13 +17,7 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["dom", "es2015", "es5"],
-    "types": [],
-    "paths": {
-      "@angular/*": [
-        "node_modules/@angular/*"
-      ],
-      "@videogular/ngx-videogular/*": ["../../dist/lib/ngx-videogular/*/public-api"],
-    }
+    "types": []
   },
   "files": [
     "public-api.ts"

@@ -2,12 +2,27 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
-    "types": []
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "include": ["**/*.d.ts"],
   "files": ["src/main.ts", "src/polyfills.ts"],
-  "exclude": ["**/*.spec.ts"],
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts",
+    "../libs"
+  ],
   "angularCompilerOptions": {
+    "enableIvy": false,
+    "preserveWhitespaces": false,
+    "resolveJsonModule": true,
     "enableResourceInlining": false
   }
 }

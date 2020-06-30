@@ -7,22 +7,16 @@
     "experimentalDecorators": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-    "inlineSourceMap": true,
-		"inlineSources": true,
+    "sourceMap": true,
     "target": "es2015",
     "module": "esnext",
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "importHelpers": true,
-    // "paths": {
-    //   "@videogular/ngx-videogular": ["libs/ngx-videogular/index.ts"],
-    //   "@videogular/ngx-videogular/core": ["libs/ngx-videogular/core/src/index.ts"],
-    //   "@videogular/ngx-videogular/ima-ads": ["libs/ngx-videogular/ima-ads/src/index.ts"],
-    //   "@videogular/ngx-videogular/overlay-play": ["libs/ngx-videogular/overlay-play/src/index.ts"],
-    //   "@videogular/ngx-videogular/buffering": ["libs/ngx-videogular/buffering/src/index.ts"],
-    //   "@videogular/ngx-videogular/streaming": ["libs/ngx-videogular/streaming/src/index.ts"],
-    //   "@videogular/ngx-videogular/controls": ["libs/ngx-videogular/controls/src/index.ts"]
-    // }
+    "paths": {
+      "@videogular/ngx-videogular": ["dist/libs/ngx-videogular"],
+      "@videogular/ngx-videogular/*": ["dist/libs/ngx-videogular/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

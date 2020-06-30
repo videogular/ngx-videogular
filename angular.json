@@ -174,7 +174,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/ngx-videogular/src/test.ts",
+            "main": "libs/ngx-videogular/test.ts",
             "tsConfig": "libs/ngx-videogular/tsconfig.spec.json",
             "karmaConfig": "libs/ngx-videogular/karma.conf.js"
           }

@@ -3,7 +3,8 @@
   "dest": "../../dist/libs/ngx-videogular",
   "deleteDestPath": false,
   "lib": {
-    "entryFile": "public-api.ts"
+    "entryFile": "public-api.ts",
+    "flatModuleFile": "videogular-ngx-videogular"
   },
   "whitelistedNonPeerDependencies": ["."]
 }
