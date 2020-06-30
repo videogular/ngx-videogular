@@ -26,7 +26,8 @@
               "apps/ngx-videogular-demo/src/assets"
             ],
             "styles": [
-              "apps/ngx-videogular-demo/src/styles.scss"
+              "apps/ngx-videogular-demo/src/styles.scss",
+              "node_modules/normalize.css/normalize.css"
             ],
             "scripts": []
           },

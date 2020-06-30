@@ -1,11 +1,11 @@
-import { AppPage } from './app.po';
+import { NgxVideogularWebsitePage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
-  let page: AppPage;
+describe('ngx-videogular-website App', () => {
+  let page: NgxVideogularWebsitePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new NgxVideogularWebsitePage();
   });
 
   it('should display welcome message', () => {
