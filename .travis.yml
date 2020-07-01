@@ -32,6 +32,7 @@ script:
   - npm run test:ci
 
 after_success:
+  - npx semantic-release
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
 
 branches:
