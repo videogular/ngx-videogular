@@ -25,7 +25,7 @@ If you want to, you can use the official Videogular font to set icons on your bu
        {
            ...
            "styles": [
-               "../node_modules/videogular2/fonts/videogular.css",
+               "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
                "styles.scss"
            ],
            ...
