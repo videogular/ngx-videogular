@@ -55,6 +55,7 @@
     "build:css": "node scripts/fonts-cpt.js",
     "build:lib": "ng build ngx-videogular --prod && npm run build:css",
     "publish:lib": "npm publish ./dist/libs/ngx-videogular",
+    "publish:ci": "npm run build:lib && ng deploy ngx-videogular",
     "package": "npm run build:lib",
     "prepack": "npm run package",
     "pack": "npm pack ./dist/libs/ngx-videogular"
@@ -145,6 +146,7 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^9.0.0",
+    "ngx-deploy-npm": "1.2.2",
     "node-sass": "^4.13.1",
     "nx-semantic-release": "0.1.2",
     "postcss": "^7.0.27",
