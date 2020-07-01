@@ -22,6 +22,7 @@ module.exports = () => {
       dir: join(__dirname, '../../coverage'),
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true,
+      skipFilesWithNoCoverage: true
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
@@ -29,6 +30,12 @@ module.exports = () => {
     logLevel: constants.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
+    customLaunchers: {
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox', '--disable-gpu']
+      }
+    },
     singleRun: true,
   };
 };

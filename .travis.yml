@@ -29,7 +29,7 @@ install:
   - npm run build:lib
 
 script:
-  - npm run ci:test
+  - npm run test:ci
 
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
