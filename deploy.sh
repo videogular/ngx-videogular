@@ -11,19 +11,17 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-cd docs
-mv _book dist/docs
-cd dist
+cd docs/ngx-videogular-demo
+mv _book dist/docs/ngx-videogular-demo
+cd dist/ngx-videogular-demo
 
 git init
-git config user.name "Raul Jimenez"
-git config user.email "elecash@gmail.com"
+git config user.name "Jaime Oliveira"
+git config user.email "jaime.amo18@gmail.com"
 
 git remote add upstream "https://$GH_TOKEN@github.com/videogular/ngx-videogular.git"
 git fetch upstream
 git reset upstream/gh-pages
-
-# echo "your-custom-domain.com" > CNAME
 
 touch .
 

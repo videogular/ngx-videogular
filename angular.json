@@ -8,25 +8,25 @@
           "style": "scss"
         }
       },
-      "root": "apps/ngx-videogular-demo",
-      "sourceRoot": "apps/ngx-videogular-demo/src",
+      "root": "docs/ngx-videogular-demo",
+      "sourceRoot": "docs/ngx-videogular-demo/src",
       "prefix": "vg",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/ngx-videogular-demo",
-            "index": "apps/ngx-videogular-demo/src/index.html",
-            "main": "apps/ngx-videogular-demo/src/main.ts",
-            "polyfills": "apps/ngx-videogular-demo/src/polyfills.ts",
-            "tsConfig": "apps/ngx-videogular-demo/tsconfig.app.json",
+            "outputPath": "dist/docs/ngx-videogular-demo",
+            "index": "docs/ngx-videogular-demo/src/index.html",
+            "main": "docs/ngx-videogular-demo/src/main.ts",
+            "polyfills": "docs/ngx-videogular-demo/src/polyfills.ts",
+            "tsConfig": "docs/ngx-videogular-demo/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "apps/ngx-videogular-demo/src/favicon.ico",
-              "apps/ngx-videogular-demo/src/assets"
+              "docs/ngx-videogular-demo/src/favicon.ico",
+              "docs/ngx-videogular-demo/src/assets"
             ],
             "styles": [
-              "apps/ngx-videogular-demo/src/styles.scss",
+              "docs/ngx-videogular-demo/src/styles.scss",
               "node_modules/normalize.css/normalize.css"
             ],
             "scripts": []
@@ -35,8 +35,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/ngx-videogular-demo/src/environments/environment.ts",
-                  "with": "apps/ngx-videogular-demo/src/environments/environment.prod.ts"
+                  "replace": "docs/ngx-videogular-demo/src/environments/environment.ts",
+                  "with": "docs/ngx-videogular-demo/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -83,22 +83,22 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/ngx-videogular-demo/tsconfig.app.json",
-              "apps/ngx-videogular-demo/tsconfig.spec.json"
+              "docs/ngx-videogular-demo/tsconfig.app.json",
+              "docs/ngx-videogular-demo/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!apps/ngx-videogular-demo/**"
+              "!docs/ngx-videogular-demo/**"
             ]
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "apps/ngx-videogular-demo/src/test.ts",
-            "tsConfig": "apps/ngx-videogular-demo/tsconfig.spec.json",
-            "karmaConfig": "apps/ngx-videogular-demo/karma.conf.js",
-            "polyfills": "apps/ngx-videogular-demo/src/polyfills.ts",
+            "main": "docs/ngx-videogular-demo/src/test.ts",
+            "tsConfig": "docs/ngx-videogular-demo/tsconfig.spec.json",
+            "karmaConfig": "docs/ngx-videogular-demo/karma.conf.js",
+            "polyfills": "docs/ngx-videogular-demo/src/polyfills.ts",
             "styles": [],
             "scripts": [],
             "assets": []
@@ -107,13 +107,13 @@
       }
     },
     "ngx-videogular-e2e": {
-      "root": "apps/ngx-videogular-e2e",
+      "root": "docs/ngx-videogular-e2e",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "apps/ngx-videogular-e2e/protractor.conf.js",
+            "protractorConfig": "docs/ngx-videogular-e2e/protractor.conf.js",
             "devServerTarget": "ngx-videogular:serve"
           },
           "configurations": {
@@ -125,10 +125,10 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "apps/ngx-videogular-e2e/tsconfig.e2e.json",
+            "tsConfig": "docs/ngx-videogular-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**",
-              "!apps/ngx-videogular-e2e/**"
+              "!docs/ngx-videogular-e2e/**"
             ]
           }
         }
