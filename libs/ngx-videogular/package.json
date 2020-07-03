@@ -1,7 +1,11 @@
 {
   "name": "@videogular/ngx-videogular",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
+  "publishConfig": {
+	  "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "peerDependencies": {
     "@angular/common": "^9.0.4",
     "@angular/core": "^9.0.4"

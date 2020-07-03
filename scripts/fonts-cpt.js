@@ -11,8 +11,7 @@ const { version } = require('../libs/ngx-videogular/package.json');
 const copyDir = () =>
   new Promise((resolve, reject) => {
     console.log(`Copying fonts...`);
-    console.log(`1... 2... 7... 3, down to Rockefeller Street`);
-    console.log(`Life is marchin' on do you feel that`);
+    console.log();
 
     cpx.copy(`libs/ngx-videogular/fonts/*`, `dist/libs/ngx-videogular/fonts`, err => {
       if (err) {
@@ -25,6 +24,10 @@ const copyDir = () =>
 const compileCss = () =>
   new Promise((resolve, reject) => {
     console.log('Prefixing and minifying index.css...');
+    console.log();
+    console.log(`1... 2... 7... 3, down to Rockefeller Street`);
+    console.log(`Life is marchin' on do you feel that`);
+    console.log();
 
     fs.readFile('dist/libs/ngx-videogular/fonts/videogular.css', (err, data) => {
       if (err) {
@@ -59,9 +62,13 @@ const compileCss = () =>
     });
   });
 
-Promise.all(['assets', 'styles'].map(dir => copyDir(dir)))
+Promise.all(['assets', 'styles']
+  .map(dir => copyDir(dir)))
   .then(() => compileCss())
-  .then(() => {console.log('Done! Have a great day!')})
+  .then(() => {
+    console.log('Done! Have a great day!');
+    console.log();
+  })
   .catch(err => {
     console.error(err);
     process.exit(1);
