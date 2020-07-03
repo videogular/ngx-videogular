@@ -64,7 +64,6 @@
     "publish:lib": "npm publish ./dist/libs/ngx-videogular",
     "publish:ci": "npm run build:lib && ng deploy ngx-videogular",
     "package": "npm run build:lib",
-    "prepack": "npm run package",
     "pack": "npm pack ./dist/libs/ngx-videogular",
     "release:local": "np",
     "release:ci": "node scripts/ci-pub-yolo.js"
