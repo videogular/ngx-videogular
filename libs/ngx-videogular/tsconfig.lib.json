@@ -17,14 +17,9 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["dom", "es2015", "es5"],
-    "types": [],
-    "paths": {
-      "@videogular/ngx-videogular/*": ["./*/public-api"]
-    }
+    "types": []
   },
-  "files": [
-    "public-api.ts"
-  ],
+  "files": ["public-api.ts"],
   "include": ["**/*.ts"],
   "exclude": [
     "test.ts",

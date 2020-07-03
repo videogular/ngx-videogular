@@ -15,8 +15,8 @@
     "lib": ["es2018", "dom"],
     "importHelpers": true,
     "paths": {
-      "@videogular/ngx-videogular": ["libs/ngx-videogular/public-api"],
-      "@videogular/ngx-videogular/*": ["libs/ngx-videogular/*/public-api"]
+      "@videogular/ngx-videogular": ["dist/libs/ngx-videogular"],
+      "@videogular/ngx-videogular/*": ["dist/libs/ngx-videogular/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
