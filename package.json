@@ -1,16 +1,16 @@
 {
   "name": "ngx-videogular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Jaime Oliveira",
     "email": "jaime.amo18@gmail.com"
   },
   "publishConfig": {
-	  "access": "public",
+    "access": "public",
     "registry": "https://registry.npmjs.org",
     "yarn": false,
-		"contents": "dist/libs/ngx-videogular"
+    "contents": "dist/libs/ngx-videogular"
   },
   "repository": {
     "type": "git",
