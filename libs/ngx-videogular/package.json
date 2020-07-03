@@ -18,6 +18,7 @@
     "tslib": "^1.11.1"
   },
   "sideEffects": false,
+  "private": false,
   "release": {
     "prepare": [
       "@semantic-release/npm",
