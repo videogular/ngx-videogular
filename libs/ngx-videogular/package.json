@@ -1,6 +1,6 @@
 {
   "name": "@videogular/ngx-videogular",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
