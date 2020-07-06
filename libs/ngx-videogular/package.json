@@ -1,6 +1,6 @@
 {
   "name": "@videogular/ngx-videogular",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The HTML5 video player for Angular 2 and successor to videogular2",
   "license": "MIT",
   "publishConfig": {
@@ -20,26 +20,6 @@
   },
   "sideEffects": false,
   "private": false,
-  "release": {
-    "prepare": [
-      "@semantic-release/npm",
-      {
-        "path": "@semantic-release/git",
-        "assets": [
-          "package.json",
-          "../dist/**/*.{js|ts}",
-          "docs"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ],
-    "verifyConditions": [
-      "@semantic-release/git"
-    ],
-    "publish": [
-      "@semantic-release/npm"
-    ]
-  },
   "author": {
     "name": "Jaime Oliveira",
     "email": "jaime.amo18@gmail.com"

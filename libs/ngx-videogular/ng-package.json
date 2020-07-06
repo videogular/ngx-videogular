@@ -1,13 +1,12 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/libs/ngx-videogular",
-  "deleteDestPath": false,
+  "deleteDestPath": true,
   "assets": [
     "fonts"
   ],
   "lib": {
     "entryFile": "public-api.ts",
     "flatModuleFile": "videogular-ngx-videogular"
-  },
-  "whitelistedNonPeerDependencies": ["."]
+  }
 }
