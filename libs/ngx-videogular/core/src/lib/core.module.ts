@@ -28,6 +28,6 @@ const directives = [
   imports: [CommonModule],
   providers: [...services],
   declarations: [...directives, VgPlayerComponent],
-  exports: [...directives]
+  exports: [...directives, VgPlayerComponent]
 })
 export class CoreModule {}
