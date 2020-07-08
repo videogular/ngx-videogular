@@ -1,8 +1,9 @@
 # Videogular
 [![travis build](https://travis-ci.org/videogular/ngx-videogular.svg?branch=master)](https://travis-ci.org/videogular/ngx-videogular)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2fdevs/videogular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Greenkeeper badge](https://badges.greenkeeper.io/videogular/ngx-videogular.svg)](https://greenkeeper.io/)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@videogular/ngx-videogular)
+![npm](https://img.shields.io/npm/dy/@videogular/ngx-videogular)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)]()
 
 **Ngx-Videogular is an HTML5 video player for Angular 2.0**. Videogular is a wrapper over the HTML5 video tag, so you can just add whatever you want. This provides a very powerful, but simple to use solution, for everybody.
 
@@ -10,12 +11,12 @@ You can see a demo here: https://videogular.github.io/videogular2-showroom/#/
 
 Documentation: https://videogular.github.io/videogular2
 
-### 48% reduction on bundle size (<sub><sup>compared to videogular2</sup></sub>)? Ivy Support? We listened to your requests 😎
-
 # Moving from Videogular2 to Ngx-Videogular
 
 Since `videogular2` is unmaintained, you should consider moving to `@videogular/ngx-videogular`.
 Should you wish to migrate from one package to the other, please check out the [migration guide](https://videogular.github.io/ngx-videogular/docs/migrating-from-videogular/).
+
+### 48% reduction on bundle size? Ivy Support?</br> 😎 All of that and more 😎
 
 # How to install
 
