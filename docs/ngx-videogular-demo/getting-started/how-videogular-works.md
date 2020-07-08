@@ -4,9 +4,9 @@ Videogular relies heavily on HTML5 standards allowing you to create your own vid
 
 Before you create your first video player first you need to understand the main elements of Videogular.
 
-* **VgPlayer**: Component where you will put all your components, directives and custom elements. It usually will be your root tag.
-* **VgMedia**: Directive that will expose properties and events to VgAPI. Usually added to a `video` or `audio` tag.
-* **VgAPI**: API exposed by VgPlayer that allows you to control the player from your own Components.
+* **VgPlayerComponent**: Component where you will put all your components, directives and custom elements. It usually will be your root tag.
+* **VgMediaDirective**: Directive that will expose properties and events to the VgApiService. Usually added to a `video` or `audio` tag.
+* **VgApiService**: API exposed by the VgPlayerComponent that allows you to control the player from your own Components.
 
 Open up `app.component.html` and let's add the most basic video player that you can create with Videogular:
 
@@ -74,11 +74,11 @@ Let's go to add an overlay play and a custom control bar.
     <iframe src="https://videogular.github.io/videogular2-showroom/#/single-player?standalone=true" frameborder="0" allowfullscreen></iframe>
 </div>
 
-This is great! We can add some Videogular components to have a nice UI for our video player. Notice for example that we have two VgScrubBar components. that's because it's a smart component that can work inside and outside VgControls.
+This is great! We can add some Videogular components to have a nice UI for our video player. Notice for example that we have two VgScrubBar components. that's because it's a smart component that can work inside and outside VgControlsComponent.
 
-The VgScrubBar inside controls has a `pointer-events: none;` to avoid clicks on it but it's necessary to create some space between components. Of course, if you like, you can remove it and create your own `div` with a `class` and it will do the job too. That's the good thing about using custom elements!
+The VgScrubBarComponent inside the controls has a `pointer-events: none;` to avoid clicks on it but it's necessary to create some space between components. Of course, if you like, you can remove it and create your own `div` with a `class` and it will do the job too. That's the good thing about using custom elements!
 
-You can also disable slider events in the VgScrubBar using the vgSlider attribute (true is default):
+You can also disable slider events in the VgScrubBarComponent using the vgSlider attribute (true is default):
 ```html
     <vg-scrub-bar [vgSlider]="false">
         <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
@@ -86,7 +86,7 @@ You can also disable slider events in the VgScrubBar using the vgSlider attribut
     </vg-scrub-bar>
 ```
 
-Optionally, a circle can be shown in VgScrubBarCurrentTime using the same vgSlider attribute (false is default):
+Optionally, a circle can be shown in VgScrubBarCurrentTimeComponent using the same vgSlider attribute (false is default):
 
 ```html
     <vg-scrub-bar [vgSlider]="true">

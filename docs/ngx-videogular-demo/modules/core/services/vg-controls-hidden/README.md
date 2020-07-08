@@ -28,13 +28,13 @@ This is an example of how to use this Service in a Component:
 export class MyCustomComponent implements OnDestroy {
     subscriptions: Subscription[] = [];
 
-    constructor(private controlsHidden: VgControlsHidden) {
-
+    constructor(private controlsHidden: VgControlsHiddenService) {
     }
 
     // @Output from vg-player component
     onPlayerReady() {
-        this.subscriptions.push(this.controlsHidden.isHidden.subscribe(this.onHideControls.bind(this)));
+        this.subscriptions.push(this.controlsHidden.isHidden
+          .subscribe(this.onHideControls.bind(this)));
     }
 
     hideControls() {

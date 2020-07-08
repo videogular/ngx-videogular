@@ -1,15 +1,15 @@
 # VgMedia @Directive
 
-The `VgMedia` directive exposes through the `VgAPI` all the events and properties of the element reference passed via the `@Input` property `vgMedia`.
+The `VgMedia` directive exposes through the `VgApiService` all the events and properties of the element reference passed via the `@Input` property `vgMedia`.
 
-To create the `VgAPI`, Videogular needs that each `VgMedia` directive has an `id` to build an internal map with all media objects.
+To create the `VgApiService`, Videogular needs that each `VgMedia` directive has an `id` to build an internal map with all media objects.
 
 ## Inputs
 
 | Input | Description |
 |--- |--- |
 | vgMedia | Element reference to a `video` tag, `audio` tag or a @Component that implements `IPlayable` |
-| vgMaster | Boolean to define if this `vgMedia` is the master media registered on the `VgAPI` |
+| vgMaster | Boolean to define if this `vgMedia` is the master media registered on the `VgApiService` |
 
 ## Methods
 

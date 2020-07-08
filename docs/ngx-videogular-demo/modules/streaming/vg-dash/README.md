@@ -2,9 +2,9 @@
 
 Component to stream with DASH an `mpd` file.
 
-You can combine `VgDASH` and `VgHLS` together. If you pass a VOD file (that means, not HLS or DASH) it will fallback to the native video implementation.
+You can combine `VgDashDirective` and `VgHlsDirective`. If you pass a VOD file (that means, not HLS or DASH) it will fallback to the native video implementation.
 
-`VgDASH` Directive is exported as `vgDash` in case you want to access to it from your template. 
+`VgDashDirective` is exported as `vgDash` in case you want to access to it from your template.
 
 In this example `currentStream` can contain either an `mpd`, `m3u8` or `mp4` file.
 

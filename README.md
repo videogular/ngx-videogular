@@ -10,6 +10,13 @@ You can see a demo here: https://videogular.github.io/videogular2-showroom/#/
 
 Documentation: https://videogular.github.io/videogular2
 
+### 48% reduction on bundle size (<sub><sup>compared to videogular2</sup></sub>)? Ivy Support? We listened to your requests 😎
+
+# Moving from Videogular2 to Ngx-Videogular
+
+Since `videogular2` is unmaintained, you should consider moving to `@videogular/ngx-videogular`.
+Should you wish to migrate from one package to the other, please check out the [migration guide](https://videogular.github.io/ngx-videogular/docs/migrating-from-videogular/).
+
 # How to install
 
 To get up and running quickly, check out the [getting started guide](https://videogular.github.io/ngx-videogular/docs/getting-started/).

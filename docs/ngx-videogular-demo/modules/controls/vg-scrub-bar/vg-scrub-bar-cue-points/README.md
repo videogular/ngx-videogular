@@ -6,7 +6,7 @@ Component to display in a bar all cue points in a `TextTrackCueList`.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to read the current progress to match against the `vgCuePoints` passed. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to read the current progress to match against the `vgCuePoints` passed. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 | vgCuePoints | Target cue points list as a `TextTrackCueList`. |
 
 ## HTML Definition

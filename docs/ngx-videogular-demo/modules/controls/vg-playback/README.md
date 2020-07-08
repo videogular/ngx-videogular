@@ -6,7 +6,7 @@ Button to toggle between different playback speeds.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to toggle between playback speeds. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to toggle between playback speeds. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 | playbackValues | Array with playback speed values in string format. Default value `[ '0.5', '1.0', '1.5', '2.0' ]`. |
 
 ## HTML Definition

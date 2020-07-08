@@ -6,7 +6,7 @@ Button to toggle between play and pause states.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to toggle between play/pause state. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to toggle between play/pause state. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 
 ## HTML Definition
 

@@ -6,7 +6,7 @@ Component to display the current time in percentage as an horizontal bar.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to display the current time. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to display the current time. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 | vgSlider | Boolean value to display a big dot at the end of the bar. Default is `false`. |
 
 ## HTML Definition

@@ -6,7 +6,7 @@ Component to display a big play button over the video.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to play/pause the specified media. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to play/pause the specified media. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 
 ## HTML Definition
 

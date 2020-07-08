@@ -6,7 +6,7 @@ Button to toggle between current selected volume and muted volume.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to toggle between volume and muted. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to toggle between volume and muted. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 
 ## HTML Definition
 

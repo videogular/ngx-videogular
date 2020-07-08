@@ -2,7 +2,7 @@
 
 Videogular's API is the service that will allow you to control the media objects and listen to any change on them. It's not mandatory to use the API but if you need to control externally the medias or you want to listen to changes you need use it.
 
-To start using the API first you need to grab it from the player. To do that listen for the event `onPlayerReady` that will get you the API:
+To start using the API first you need to grab it from the player. To do that listen for the `onPlayerReady` event that will get you the API:
 
 ```html
 <vg-player (onPlayerReady)="onPlayerReady($event)">
@@ -40,7 +40,7 @@ Now on your `Component` get the API:
 
 ```typescript
 import {Component} from '@angular/core';
-import {VgAPI} from '@videogular/ngx-videogular/core';
+import {VgApiService} from '@videogular/ngx-videogular/core';
 
 @Component({
     selector: 'bound-player',
@@ -48,11 +48,11 @@ import {VgAPI} from '@videogular/ngx-videogular/core';
 })
 export class BoundPlayer {
     preload:string = 'auto';
-    api:VgAPI;
+    api: VgApiService;
 
     constructor() {}
 
-    onPlayerReady(api:VgAPI) {
+    onPlayerReady(api:V gApiService) {
         this.api = api;
     }
 }
@@ -61,7 +61,7 @@ export class BoundPlayer {
 Now that you have the API you can listen to changes and perform actions:
 
 ```typescript
-onPlayerReady(api:VgAPI) {
+onPlayerReady(api: VgApiService) {
     this.api = api;
 
     this.api.getDefaultMedia().subscriptions.ended.subscribe(

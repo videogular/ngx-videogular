@@ -6,7 +6,7 @@ Import definition:
 
 ```typescript
 ...
-import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 
 @NgModule({
     ...

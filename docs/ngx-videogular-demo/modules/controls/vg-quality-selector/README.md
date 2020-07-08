@@ -4,7 +4,7 @@ Component to display a quality selector.
 
 It will display a list of available videos or audios. `AUTO` will be always the first option and the default option.
 
-The rest of labels are calculated with the `bitrate / 1000`. You can override the labels when you get the `onGetBitrate` event from `VgDASH` or `VgHLS`.
+The rest of labels are calculated with the `bitrate / 1000`. You can override the labels when you get the `onGetBitrate` event from `VgDashDirective` or `VgHlsDirective`.
 
 ## Inputs
 

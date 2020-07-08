@@ -6,7 +6,7 @@ Buffering component to display a buffer icon when the media is paused and loadin
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to get the buffer from that specified media. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to get the buffer from that specified media. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 
 ## HTML Definition
 

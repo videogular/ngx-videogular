@@ -6,7 +6,7 @@ Component to display a selector for tracks of kind `subtitles` registered to the
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to display the tracks to select. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to display the tracks to select. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 
 ## HTML Definition
 

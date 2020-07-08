@@ -2,13 +2,13 @@
 
 Main component responsible of the creation of the API. This should be your root component and all videogular components must be placed inside this component.
 
-To create the `VgAPI`, Videogular needs that each `VgMedia` directive has an `id` to build an internal map with all media objects.
+To create the `VgApiService`, Videogular needs that each `VgMedia` directive has an `id` to build an internal map with all media objects.
 
 ## Outputs
 
 | Output | Description |
 |--- |--- |
-| onPlayerReady | Triggered when player have been initialized. Returns a `VgAPI` instance. |
+| onPlayerReady | Triggered when player have been initialized. Returns a `VgApiService` instance. |
 
 ## HTML Definition
 

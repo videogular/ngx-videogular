@@ -6,7 +6,7 @@ Component to display the current buffering percentage loaded.
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to display the buffering loaded. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to display the buffering loaded. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 
 ## HTML Definition
 

@@ -9,7 +9,7 @@ This is very useful on some cases. Let's imagine an scenario where we have two v
 
 To solve all this questions we can use a Master media.
 
-In this example we have two videos and `masterVideo` is the master video because we added `[vgMaster]="true"`. When a `vgMedia` is defined as master all other events and properties are ignored by `VgAPI` so all components will only be notified when a change on the master media have been happened.
+In this example we have two videos and `masterVideo` is the master video because we added `[vgMaster]="true"`. When a `vgMedia` is defined as master all other events and properties are ignored by `VgApiService` so all components will only be notified when a change on the master media have been happened.
 
 ```html
 <vg-player>
@@ -56,19 +56,19 @@ Now you can add `vgFor="video-id"` to decide which `vgMedia` target when a user 
     <div class="left">
         <vg-controls>
             <vg-play-pause vgFor="leftVideo"></vg-play-pause>
-    
+
             <vg-scrub-bar vgFor="leftVideo">
                 <vg-scrub-bar-current-time vgFor="leftVideo"></vg-scrub-bar-current-time>
                 <vg-scrub-bar-buffering-time vgFor="leftVideo"></vg-scrub-bar-buffering-time>
             </vg-scrub-bar>
-    
+
             <vg-time-display vgvgProperty="left" vgvgFormat="mm:ss"></vg-time-display>
-    
+
             <vg-mute vgFor="leftVideo"></vg-mute>
-    
+
             <vg-fullscreen vgFor="leftVideo"></vg-fullscreen>
         </vg-controls>
-    
+
         <video [vgMedia]="left" #left id="leftVideo" preload="auto">
             <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
         </video>
@@ -77,19 +77,19 @@ Now you can add `vgFor="video-id"` to decide which `vgMedia` target when a user 
     <div class="right">
         <vg-controls>
             <vg-play-pause vgFor="rightVideo"></vg-play-pause>
-    
+
             <vg-scrub-bar vgFor="rightVideo">
                 <vg-scrub-bar-current-time vgFor="rightVideo"></vg-scrub-bar-current-time>
                 <vg-scrub-bar-buffering-time vgFor="rightVideo"></vg-scrub-bar-buffering-time>
             </vg-scrub-bar>
-    
+
             <vg-time-display vgFor="rightVideo" vgvgProperty="left" vgvgFormat="mm:ss"></vg-time-display>
-    
+
             <vg-mute vgFor="rightVideo"></vg-mute>
-    
+
             <vg-fullscreen vgFor="rightVideo"></vg-fullscreen>
         </vg-controls>
-        
+
         <video [vgMedia]="right" #right id="rightVideo" preload="auto">
             <source src="http://static.videogular.com/assets/videos/vr-demo.mp4" type="video/mp4">
         </video>

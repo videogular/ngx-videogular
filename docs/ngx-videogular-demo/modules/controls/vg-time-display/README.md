@@ -6,7 +6,7 @@ Component to display the current time, total time or time left for the current m
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to listen to play/pause events (used to auto hide controls). This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to listen to play/pause events (used to auto hide controls). This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 | vgProperty | String value to set the property to display. Possible values are `current`, `total` or `left`. Default is `current`. |
 | vgFormat | String value to define a time mask. Default is `mm:ss`. |
 

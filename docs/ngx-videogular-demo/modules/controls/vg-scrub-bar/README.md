@@ -8,7 +8,7 @@ This component also has listeners to seek when user clicks or drag in the scrub 
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to listen to play/pause events (used to auto hide controls). This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to listen to play/pause events (used to auto hide controls). This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 | vgSlider | Boolean value to set if we want to enable drag and drop events. Default is `true`. |
 
 ## HTML Definition

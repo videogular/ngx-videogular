@@ -6,7 +6,7 @@ Component to display videos and banners with the [Google IMA HTML5 SDK](https://
 
 | Input | Description |
 |--- |--- |
-| vgFor | Target media `id` property to play/pause the specified media. This parameter is optional and only necessary if you have more than one media registered into `VgAPI`. |
+| vgFor | Target media `id` property to play/pause the specified media. This parameter is optional and only necessary if you have more than one media registered into `VgApiService`. |
 | vgAdTagUrl | Required. String to the advertisement tag url. |
 | vgCompanion | Optional. String with the `id` of a container to display the companion ad. If you want to read more about it, please look [official docs](https://developers.google.com/interactive-media-ads/docs/sdks/html5/companions-gpt). |
 | vgCompanionSize | Optional. Array of numbers with sizes of the companion ad. Format: `[width, height]`. |

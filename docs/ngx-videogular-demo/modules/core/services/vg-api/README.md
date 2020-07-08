@@ -1,4 +1,4 @@
-# VgAPI @Injectable Service
+# VgApiService @Injectable Service
 
 Service that controls all media objects inside `vg-player` element.
 
