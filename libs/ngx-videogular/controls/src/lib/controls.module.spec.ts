@@ -1,14 +1,14 @@
 import { async, TestBed } from '@angular/core/testing';
-import { ControlsModule } from './controls.module';
+import { VgControlsModule } from './controls.module';
 
 describe('VgControlsModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ControlsModule],
+      imports: [VgControlsModule],
     }).compileComponents();
   }));
 
   it('should create', () => {
-    expect(ControlsModule).toBeDefined();
+    expect(VgControlsModule).toBeDefined();
   });
 });

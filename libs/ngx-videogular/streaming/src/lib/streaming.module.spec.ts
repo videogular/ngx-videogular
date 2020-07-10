@@ -1,14 +1,14 @@
 import { async, TestBed } from '@angular/core/testing';
-import { StreamingModule } from './streaming.module';
+import { VgStreamingModule } from './streaming.module';
 
 describe('VgStreamingModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [StreamingModule],
+      imports: [VgStreamingModule],
     }).compileComponents();
   }));
 
   it('should create', () => {
-    expect(StreamingModule).toBeDefined();
+    expect(VgStreamingModule).toBeDefined();
   });
 });

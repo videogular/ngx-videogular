@@ -1,14 +1,14 @@
 import { async, TestBed } from '@angular/core/testing';
-import { BufferingModule } from './buffering.module';
+import { VgBufferingModule } from './buffering.module';
 
 describe('VgBufferingModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [BufferingModule],
+      imports: [VgBufferingModule],
     }).compileComponents();
   }));
 
   it('should create', () => {
-    expect(BufferingModule).toBeDefined();
+    expect(VgBufferingModule).toBeDefined();
   });
 });

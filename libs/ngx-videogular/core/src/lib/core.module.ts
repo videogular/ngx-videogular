@@ -30,4 +30,4 @@ const directives = [
   declarations: [...directives, VgPlayerComponent],
   exports: [...directives, VgPlayerComponent]
 })
-export class CoreModule {}
+export class VgCoreModule {}
