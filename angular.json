@@ -191,10 +191,10 @@
       "unitTestRunner": "karma"
     },
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "style": "scss"
     },
     "@schematics/angular:library": {
-      "styleext": "scss"
+      "style": "scss"
     }
   },
   "defaultProject": "ngx-videogular"
