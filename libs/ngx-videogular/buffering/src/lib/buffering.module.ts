@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VgBufferingComponent } from './vg-buffering/vg-buffering.component';
-import { CoreModule } from '@videogular/ngx-videogular/core';
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
 
 @NgModule({
-  imports: [CommonModule, CoreModule],
+  imports: [CommonModule, VgCoreModule],
   declarations: [VgBufferingComponent],
   exports: [VgBufferingComponent],
 })
-export class BufferingModule {}
+export class VgBufferingModule {}
