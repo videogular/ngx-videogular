@@ -45,7 +45,7 @@
     * [VgFullscreenComponent](modules/controls/vg-fullscreen/README.md)
 
 * [ngx-videogular/ima-ads](modules/ima-ads/README.md)
-    * [VgImaAds](modules/ima-ads/vg-ima-ads/README.md)
+    * [VgImaAdsComponent](modules/ima-ads/vg-ima-ads/README.md)
 
 * [ngx-videogular/overlay-play](modules/overlay-play/README.md)
     * [VgOverlayPlayComponent](modules/overlay-play/vg-overlay-play/README.md)

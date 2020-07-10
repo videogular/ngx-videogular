@@ -39,7 +39,7 @@ import {
     `,
   ],
 })
-export class VgImaAds implements OnInit, OnDestroy {
+export class VgImaAdsComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;
   @Input() vgNetwork: string;
   @Input() vgUnitPath: string;
