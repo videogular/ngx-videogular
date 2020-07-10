@@ -9,7 +9,7 @@ import { IPlayable } from '../../interfaces/vg-media-api.interface';
 export class VgApiService {
   medias = {}; // TODO: refactor to Set<IPlayable>
   videogularElement: any;
-  playerReadyEvent: EventEmitter<any> = new EventEmitter(true);
+  playerReadyEvent: EventEmitter<VgApiService> = new EventEmitter<VgApiService>(true);
   isPlayerReady = false;
   fsAPI: VgFullscreenApiService;
 

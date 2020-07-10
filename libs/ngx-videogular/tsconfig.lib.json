@@ -17,14 +17,16 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["dom", "es2015", "es5"],
-    "types": []
+    "types": [],
+    "paths": {
+      "@videogular/ngx-videogular/*": ["./*/src/index"]
+    }
   },
   "files": ["public-api.ts"],
   "include": ["**/*.ts"],
   "exclude": [
     "test.ts",
-    "**/*.spec.ts",
-    "node_modules"
+    "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
     "enableIvy": false,

@@ -134,7 +134,7 @@
     "@nrwl/workspace": "9.3.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
+    "@types/node": "^12.11.1",
     "angular-cli-ghpages": "0.6.2",
     "autoprefixer": "^9.3.1",
     "clean-css": "^4.2.3",

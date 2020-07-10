@@ -6,8 +6,9 @@
     "emitDecoratorMetadata": false,
     "experimentalDecorators": true,
     "downlevelIteration": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "declaration": false,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "target": "es2015",
     "module": "esnext",
@@ -15,8 +16,8 @@
     "lib": ["es2018", "dom"],
     "importHelpers": true,
     "paths": {
-      "@videogular/ngx-videogular": ["dist/libs/ngx-videogular"],
-      "@videogular/ngx-videogular/*": ["dist/libs/ngx-videogular/*"]
+      "@videogular/ngx-videogular": ["libs/ngx-videogular/public-api"],
+      "@videogular/ngx-videogular/*": ["libs/ngx-videogular/*/src/index"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -47,12 +47,12 @@ import {VgApiService} from '@videogular/ngx-videogular/core';
     templateUrl: 'src/bound-player.html'
 })
 export class BoundPlayer {
-    preload:string = 'auto';
+    preload: string = 'auto';
     api: VgApiService;
 
     constructor() {}
 
-    onPlayerReady(api:V gApiService) {
+    onPlayerReady(api: VgApiService) {
         this.api = api;
     }
 }

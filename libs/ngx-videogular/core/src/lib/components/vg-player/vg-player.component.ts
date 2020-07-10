@@ -52,7 +52,7 @@ export class VgPlayerComponent implements AfterContentInit, OnDestroy {
   @HostBinding('class.controls-hidden') areControlsHidden = false;
   @HostBinding('style.z-index') zIndex: string;
 
-  @Output() onPlayerReady: EventEmitter<any> = new EventEmitter();
+  @Output() onPlayerReady: EventEmitter<VgApiService> = new EventEmitter<VgApiService>();
   @Output() onMediaReady: EventEmitter<any> = new EventEmitter();
 
   @ContentChildren(VgMediaDirective) medias: QueryList<VgMediaDirective>;
