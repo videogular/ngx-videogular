@@ -21,6 +21,7 @@ declare let dashjs: {
     (): { (): any; new (): any; create: { (): any; new (): any } };
     events: { STREAM_INITIALIZED: any };
   };
+  Debug: { LOG_LEVEL_NONE: any };
 };
 
 @Directive({
