@@ -21,6 +21,7 @@ declare let dashjs: {
     (): { (): any; new (): any; create: { (): any; new (): any } };
     events: { STREAM_INITIALIZED: any };
   };
+  Debug: { LOG_LEVEL_NONE: any };
 };
 
 @Directive({
@@ -90,7 +91,7 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
       }
 
       this.dash = dashjs.MediaPlayer().create();
-      this.dash.getDebug().setLogToBrowserConsole(false);
+      this.dash.updateSettings({ 'debug': { 'logLevel': dashjs.Debug.LOG_LEVEL_NONE } });
       this.dash.initialize(this.ref.nativeElement);
       this.dash.setAutoPlay(false);
 
