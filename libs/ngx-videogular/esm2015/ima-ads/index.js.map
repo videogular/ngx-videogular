@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../libs/ngx-videogular/ima-ads/src/index.ts"],"names":[],"mappings":";;;;;AAAA,+BAAc,sBAAsB,CAAC;AACrC,uCAAc,4BAA4B,CAAC","sourcesContent":["export * from './lib/ima-ads.module';\nexport * from './lib/vg-ima-ads.component';\n// export './lib/google.ima';\n"]}

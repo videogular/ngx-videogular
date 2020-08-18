@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../libs/ngx-videogular/buffering/src/index.ts"],"names":[],"mappings":";;;;;AAAA,kCAAc,wBAAwB,CAAC;AACvC,qCAAc,2CAA2C,CAAC","sourcesContent":["export * from './lib/buffering.module';\nexport * from './lib/vg-buffering/vg-buffering.component';\n"]}

@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../libs/ngx-videogular/overlay-play/src/index.ts"],"names":[],"mappings":";;;;;AAAA,oCAAc,2BAA2B,CAAC;AAC1C,uCAAc,iCAAiC,CAAC","sourcesContent":["export * from './lib/overlay-play.module';\nexport * from './lib/vg-overlay-play.component';\n"]}
