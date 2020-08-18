@@ -9,7 +9,7 @@
 
 You can see a demo here: https://videogular.github.io/videogular2-showroom/#/
 
-Documentation: https://videogular.github.io/videogular2
+Documentation: https://videogular.github.io/ngx-videogular/
 
 # Moving from Videogular2 to Ngx-Videogular
 
