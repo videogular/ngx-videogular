@@ -13,7 +13,7 @@ rev=$(git rev-parse --short HEAD)
 
 cd docs/ngx-videogular-demo
 mv _book dist/docs/ngx-videogular-demo
-cd dist/ngx-videogular-demo
+cd dist/docs/ngx-videogular-demo
 
 git init
 git config user.name "Jaime Oliveira"
