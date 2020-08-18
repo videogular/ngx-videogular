@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/videogular-ngx-videogular-overlay-play.umd.js",
+  "module": "../fesm2015/videogular-ngx-videogular-overlay-play.js",
+  "es2015": "../fesm2015/videogular-ngx-videogular-overlay-play.js",
+  "esm2015": "../esm2015/overlay-play/videogular-ngx-videogular-overlay-play.js",
+  "fesm2015": "../fesm2015/videogular-ngx-videogular-overlay-play.js",
+  "typings": "videogular-ngx-videogular-overlay-play.d.ts",
+  "metadata": "videogular-ngx-videogular-overlay-play.metadata.json",
+  "sideEffects": false,
+  "name": "@videogular/ngx-videogular/overlay-play"
+}

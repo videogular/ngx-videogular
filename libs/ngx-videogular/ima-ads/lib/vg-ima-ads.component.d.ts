@@ -1,0 +1,55 @@
+import './google.ima';
+import { ElementRef, OnInit, OnDestroy, EventEmitter } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { IPlayable, VgApiService, VgFullscreenApiService } from '@videogular/ngx-videogular/core';
+export declare class VgImaAdsComponent implements OnInit, OnDestroy {
+    API: VgApiService;
+    fsAPI: VgFullscreenApiService;
+    vgFor: string;
+    vgNetwork: string;
+    vgUnitPath: string;
+    vgCompanion: string;
+    vgCompanionSize: Array<Number>;
+    vgAdTagUrl: string;
+    vgSkipButton: string;
+    onAdStart: EventEmitter<boolean>;
+    onAdStop: EventEmitter<boolean>;
+    onSkipAd: EventEmitter<boolean>;
+    elem: HTMLElement;
+    target: IPlayable;
+    ima: Ima;
+    isFullscreen: boolean;
+    skipButton: HTMLElement;
+    subscriptions: Subscription[];
+    displayState: string;
+    constructor(ref: ElementRef, API: VgApiService, fsAPI: VgFullscreenApiService);
+    ngOnInit(): void;
+    onPlayerReady(): void;
+    initializations(): void;
+    loadAds(): void;
+    onUpdateState(event: any): void;
+    requestAds(adTagUrl: string): void;
+    onAdsManagerLoaded(evt: google.ima.AdsManagerLoadedEvent): void;
+    processAdsManager(adsManager: google.ima.AdsManager): void;
+    onSkippableStateChanged(): void;
+    onClickSkip(): void;
+    onContentPauseRequested(): void;
+    onContentResumeRequested(): void;
+    onAdError(evt: any): void;
+    onAllAdsComplete(): void;
+    onAdComplete(): void;
+    show(): void;
+    hide(): void;
+    onContentEnded(): void;
+    onChangeFullscreen(fsState: boolean): void;
+    private onMissingGoogleImaLoader;
+    ngOnDestroy(): void;
+}
+export declare class Ima {
+    adDisplayContainer: google.ima.AdDisplayContainer;
+    adsLoader: google.ima.AdsLoader;
+    adsManager: google.ima.AdsManager;
+    adsLoaded: boolean;
+    currentAd: number;
+    constructor(imaAdsElement: HTMLElement);
+}

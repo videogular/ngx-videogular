@@ -1,0 +1,1 @@
+{"version":3,"file":"videogular-ngx-videogular-core.js","sourceRoot":"","sources":["../../../../../libs/ngx-videogular/core/src/videogular-ngx-videogular-core.ts"],"names":[],"mappings":";;;;;;;;AAIA,2MAAc,SAAS,CAAC","sourcesContent":["/**\n * Generated bundle index. Do not edit.\n */\n\nexport * from './index';\n"]}

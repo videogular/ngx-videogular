@@ -1,0 +1,1 @@
+{"version":3,"file":"idrm-license-server.interface.js","sourceRoot":"","sources":["../../../../../../../libs/ngx-videogular/core/src/lib/interfaces/idrm-license-server.interface.ts"],"names":[],"mappings":";;;;;;;;AAAA,uCAIC","sourcesContent":["export interface IDRMLicenseServer {\n  [index: string]: {\n    serverURL: string;\n  };\n}\n"]}

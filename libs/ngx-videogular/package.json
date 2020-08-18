@@ -1,0 +1,49 @@
+{
+  "name": "@videogular/ngx-videogular",
+  "version": "2.0.0",
+  "description": "The HTML5 video player for Angular 2 and successor to videogular2",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=8.0.0 <10.0.3",
+    "@angular/core": ">=8.0.0 <10.0.3",
+    "@angular/platform-browser-dynamic": ">=8.0.0 <10.0.3",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.5.4",
+    "zone.js": "^0.10.2"
+  },
+  "dependencies": {
+    "tslib": "^1.11.1"
+  },
+  "sideEffects": false,
+  "private": false,
+  "author": {
+    "name": "Jaime Oliveira",
+    "email": "jaime.amo18@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/videogular/ngx-videogular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/videogular/ngx-videogular/issues"
+  },
+  "homepage": "https://github.com/videogular/ngx-videogular#readme",
+  "keywords": [
+    "video",
+    "player",
+    "framework",
+    "angular2",
+    "javascript"
+  ],
+  "main": "bundles/videogular-ngx-videogular.umd.js",
+  "module": "fesm2015/videogular-ngx-videogular.js",
+  "es2015": "fesm2015/videogular-ngx-videogular.js",
+  "esm2015": "esm2015/videogular-ngx-videogular.js",
+  "fesm2015": "fesm2015/videogular-ngx-videogular.js",
+  "typings": "videogular-ngx-videogular.d.ts",
+  "metadata": "videogular-ngx-videogular.metadata.json"
+}
