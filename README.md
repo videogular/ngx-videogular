@@ -14,7 +14,7 @@ Documentation: https://videogular.github.io/ngx-videogular/
 # Moving from Videogular2 to Ngx-Videogular
 
 Since `videogular2` is unmaintained, you should consider moving to `@videogular/ngx-videogular`.
-Should you wish to migrate from one package to the other, please check out the [migration guide](https://videogular.github.io/ngx-videogular/docs/migrating-from-videogular/).
+Should you wish to migrate from one package to the other, please check out the [migration guide](https://github.com/videogular/ngx-videogular/blob/master/docs/ngx-videogular-demo/migrating-from-videogular2/README.md).
 
 ### 48% reduction on bundle size? Ivy Support?</br> 😎 All of that and more 😎
 
