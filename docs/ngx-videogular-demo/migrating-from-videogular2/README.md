@@ -52,7 +52,7 @@ npm i --save @videogular/ngx-videogular
 
 ## **[DISCLAIMER]**
 
-All features and the overall code are **the same** as `videogular2` (well, we made some preformance improvements but that doesn't change how it behaves).<br>
+All features and the overall code are **the same** as `videogular2` (well, we made some performance improvements but that doesn't change how it behaves).<br>
 So if you used and trusted it before, you can expect **the same thing**.
 
 ## **Import Paths**
