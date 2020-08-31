@@ -72,4 +72,4 @@ Now we're ready to start creating our video player.
 
 In the next section we will see how to create our very first video player!
 
-<a href="how-videogular-works.html">Go to How Videogular Works</a>
+[Go to How Videogular Works](https://github.com/videogular/ngx-videogular/blob/master/docs/ngx-videogular-demo/getting-started/how-videogular-works.md)
