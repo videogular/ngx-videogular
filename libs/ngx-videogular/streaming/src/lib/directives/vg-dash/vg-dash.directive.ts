@@ -15,7 +15,6 @@ import {
   BitrateOptions,
   VgApiService,
 } from '@videogular/ngx-videogular/core';
-// import dashjs, {MediaPlayerClass, MediaType, LogLevel} from 'dashjs';
 
 declare let dashjs: {
   MediaPlayer: {
@@ -119,8 +118,9 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
 
         if (videoList.length > 1) {
           videoList.forEach(
-            (item: { qualityIndex: number }) =>
-              (item.qualityIndex = ++item.qualityIndex)
+            (item: {qualityIndex: number}) => (
+              item.qualityIndex = ++item.qualityIndex
+            )
           );
           videoList.unshift({
             qualityIndex: 0,
@@ -156,7 +156,9 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
           this.dash.updateSettings({
             streaming: {
               abr: {
-                autoSwitchBitrate: {[mediaType]: false}
+                autoSwitchBitrate: {
+                  [mediaType]: false
+                }
               }
             }
           });
@@ -168,7 +170,9 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
         this.dash.updateSettings({
           streaming: {
             abr: {
-              autoSwitchBitrate: {[mediaType]: true}
+              autoSwitchBitrate: {
+                [mediaType]: true
+              }
             }
           }
         });
