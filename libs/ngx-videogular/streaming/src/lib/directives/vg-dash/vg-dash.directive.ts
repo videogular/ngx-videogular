@@ -91,7 +91,7 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
       }
 
       this.dash = dashjs.MediaPlayer().create();
-      this.dash.updateSettings({ 'debug': { 'logLevel': dashjs.Debug.LOG_LEVEL_NONE } });
+      this.dash.updateSettings({debug: {logLevel: dashjs.Debug.LOG_LEVEL_NONE}});
       this.dash.initialize(this.ref.nativeElement);
       this.dash.setAutoPlay(false);
 
@@ -110,7 +110,7 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
             height: 0,
             bitrate: 0,
             mediaType: 'video',
-            label: 'AUTO',
+            scanType: 'AUTO',
           });
 
           this.onGetBitrates.emit(audioList);
@@ -118,8 +118,9 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
 
         if (videoList.length > 1) {
           videoList.forEach(
-            (item: { qualityIndex: number }) =>
-              (item.qualityIndex = ++item.qualityIndex)
+            (item: {qualityIndex: number}) => (
+              item.qualityIndex = ++item.qualityIndex
+            )
           );
           videoList.unshift({
             qualityIndex: 0,
@@ -127,7 +128,7 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
             height: 0,
             bitrate: 0,
             mediaType: 'video',
-            label: 'AUTO',
+            scanType: 'AUTO',
           });
 
           this.onGetBitrates.emit(videoList);
@@ -148,17 +149,33 @@ export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
     }
   }
 
-  setBitrate(bitrate: BitrateOptions) {
+  setBitrate({mediaType, qualityIndex}: BitrateOptions) {
     if (this.dash) {
-      if (bitrate.qualityIndex > 0) {
-        if (this.dash.getAutoSwitchQualityFor(bitrate.mediaType)) {
-          this.dash.setAutoSwitchQualityFor(bitrate.mediaType, false);
+      if (qualityIndex > 0) {
+        if (this.dash.getSettings()) {
+          this.dash.updateSettings({
+            streaming: {
+              abr: {
+                autoSwitchBitrate: {
+                  [mediaType]: false
+                }
+              }
+            }
+          });
         }
 
-        const nextIndex = bitrate.qualityIndex - 1;
-        this.dash.setQualityFor(bitrate.mediaType, nextIndex);
+        const nextIndex = qualityIndex - 1;
+        this.dash.setQualityFor(mediaType, nextIndex);
       } else {
-        this.dash.setAutoSwitchQualityFor(bitrate.mediaType, true);
+        this.dash.updateSettings({
+          streaming: {
+            abr: {
+              autoSwitchBitrate: {
+                [mediaType]: true
+              }
+            }
+          }
+        });
       }
     }
   }

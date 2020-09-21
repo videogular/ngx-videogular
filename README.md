@@ -18,6 +18,10 @@ Should you wish to migrate from one package to the other, please check out the [
 
 ### 48% reduction on bundle size? Ivy Support?</br> 😎 All of that and more 😎
 
+# DashJS 2.X.X deprecation
+
+For DashJS compatiblity, please use @videogular/ngx-videogular version < 2.0.1. Moving starting from 2.0.1 we'll only support DashJS 3.X.X
+
 # How to install
 
 To get up and running quickly, check out the [getting started guide](https://videogular.github.io/ngx-videogular/docs/getting-started/).
