@@ -25,8 +25,14 @@ const compileCss = () =>
   new Promise((resolve, reject) => {
     console.log('Prefixing and minifying index.css...');
     console.log();
-    console.log(`1... 2... 7... 3, down to Rockefeller Street`);
-    console.log(`Life is marchin' on do you feel that`);
+    console.log(`Letting the days go by`);
+    console.log(`Let the water hold me down`);
+    console.log(`Letting the days go by`);
+    console.log(`Water flowing underground`);
+    console.log(`Into the blue again`);
+    console.log(`After the money's gone`);
+    console.log(`Once in a lifetime`);
+    console.log(`Let the water hold me down`);
     console.log();
 
     fs.readFile('dist/libs/ngx-videogular/fonts/videogular.css', (err, data) => {
