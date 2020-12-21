@@ -1,4 +1,4 @@
-import { async, TestBed } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { VgPlayerComponent } from './vg-player.component';
@@ -67,11 +67,11 @@ describe('Videogular Player', () => {
     });
   });
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.compileComponents();
   }));
 
-  it('Should create a VgPlayer component', async(() => {
+  it('Should create a VgPlayer component', waitForAsync(() => {
     const fixture = TestBed.createComponent(VgPlayerTest);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;

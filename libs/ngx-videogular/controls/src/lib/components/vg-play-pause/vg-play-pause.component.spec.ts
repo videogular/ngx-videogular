@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { VgPlayPauseComponent } from './vg-play-pause.component';
 
@@ -6,7 +6,7 @@ describe('VgPlayPauseComponent', () => {
   let component: VgPlayPauseComponent;
   let fixture: ComponentFixture<VgPlayPauseComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ VgPlayPauseComponent ]
     })

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { VgScrubBarCuePointsComponent } from './vg-scrub-bar-cue-points.component';
 
@@ -6,7 +6,7 @@ describe('VgScrubBarCuePointsComponent', () => {
   let component: VgScrubBarCuePointsComponent;
   let fixture: ComponentFixture<VgScrubBarCuePointsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ VgScrubBarCuePointsComponent ]
     })
