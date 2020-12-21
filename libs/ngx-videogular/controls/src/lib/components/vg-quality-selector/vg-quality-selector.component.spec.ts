@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { VgQualitySelectorComponent } from './vg-quality-selector.component';
 
@@ -6,7 +6,7 @@ describe('VgQualitySelectorComponent', () => {
   let component: VgQualitySelectorComponent;
   let fixture: ComponentFixture<VgQualitySelectorComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ VgQualitySelectorComponent ]
     })

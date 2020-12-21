@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { VgTrackSelectorComponent } from './vg-track-selector.component';
 
@@ -6,7 +6,7 @@ describe('VgTrackSelectorComponent', () => {
   let component: VgTrackSelectorComponent;
   let fixture: ComponentFixture<VgTrackSelectorComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ VgTrackSelectorComponent ]
     })
