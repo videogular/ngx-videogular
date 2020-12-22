@@ -11,6 +11,10 @@
 * [Master Media](getting-started/master-media.md)
 * [Using the API](getting-started/using-the-api.md)
 
+### Migrating from videogular2
+
+* [Migrating from videogular2](migrating-from-videogular2/README.md)
+
 ### Modules
 
 * [ngx-videogular/core](modules/core/README.md)
