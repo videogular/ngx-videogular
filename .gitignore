@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+docs/ngx-videogular-demo/node_modules
 
 # profiling files
 chrome-profiler-events*.json
@@ -40,6 +41,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+docs/ngx-videogular-demo/_book
 
 # System Files
 .DS_Store
