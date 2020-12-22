@@ -97,9 +97,9 @@ For more module-specific API imports, please check out [Modules](https://github.
 |               | VgEvents                | VgEvents                         |
 |               | VgStates                | VgStates                         |
 |               | BitrateOption           | BitrateOption                    |
-| ------------- | ----------------------- | -------------------------------- |
+|---------------|-------------------------|----------------------------------|
 | /buffering    | VgBuffering             | VgBufferingComponent             |
-| ------------- | ----------------------- | -------------------------------- |
+|---------------|-------------------------|----------------------------------|
 | /controls     | VgControls              | VgControlsComponent              |
 |               | VgPlayPause             | VgPlayPauseComponent             |
 |               | VgPlaybackButton        | VgPlaybackButtonComponent        |
@@ -114,10 +114,10 @@ For more module-specific API imports, please check out [Modules](https://github.
 |               | VgMute                  | VgMuteComponent                  |
 |               | VgVolume                | VgVolumeComponent                |
 |               | VgFullscreen            | VgFullscreenComponent            |
-| ------------- | ----------------------- | -------------------------------- |
+|---------------|-------------------------|----------------------------------|
 | /ima-ads      | VgImaAds                | VgImaAdsComponent                |
-| ------------- | ----------------------- | -------------------------------- |
+|---------------|-------------------------|----------------------------------|
 | /overlay-play | VgOverlayPlay           | VgOverlayPlayComponent           |
-| ------------- | ----------------------- | -------------------------------- |
+|---------------|-------------------------|----------------------------------|
 | /streaming    | VgDASH                  | VgDashDirective                  |
 |               | VgHLS                   | VgHlsDirective                   |
