@@ -101,4 +101,4 @@ You have a lot of events to listen:
 - **startAds**: Fired when an advertisement started. This event will only be triggered if you have the Videogular Google IMA in your media player.
 - **endAds**: Fired when an advertisement completes. This event will only be triggered if you have the Videogular Google IMA in your media player.
 
-Event information extracted from MDN: https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events
+Event information extracted from MDN: <https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events>
