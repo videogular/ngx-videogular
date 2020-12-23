@@ -11,7 +11,7 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-mv docs/ngx-videogular-demo/_book dist/docs/ngx-videogular-demo
+mv docs/ngx-videogular-demo/_book dist/docs/ngx-videogular-demo/docs
 cd dist/docs/ngx-videogular-demo
 
 git init
