@@ -27,7 +27,7 @@
     * [VgCuePointsDirective](modules/core/vg-cue-points/README.md)
     * [VgEvents](modules/core/events/README.md)
     * [VgStates](modules/core/states/README.md)
-    * [BitrateOption](modules/core/bitrate-option/README.md)
+    * [BitrateOptions](modules/core/bitrate-options/README.md)
 
 * [ngx-videogular/buffering](modules/buffering/README.md)
     * [VgBufferingComponent](modules/buffering/vg-buffering/README.md)

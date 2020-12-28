@@ -1,4 +1,4 @@
-# BitrateOption
+# BitrateOptions
 
 Interface available on `@videogular/ngx-videogular/core` module.
 

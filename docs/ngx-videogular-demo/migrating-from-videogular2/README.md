@@ -96,7 +96,7 @@ For more module-specific API imports, please check out [Modules](https://github.
 |               | VgCuePoints             | VgCuePointsDirective             |
 |               | VgEvents                | VgEvents                         |
 |               | VgStates                | VgStates                         |
-|               | BitrateOption           | BitrateOption                    |
+|               | BitrateOption           | BitrateOptions                   |
 |---------------|-------------------------|----------------------------------|
 | /buffering    | VgBuffering             | VgBufferingComponent             |
 |---------------|-------------------------|----------------------------------|

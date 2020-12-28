@@ -53,7 +53,7 @@ This module is dependant of `dashjs` library and you need to install via `npm in
 
 | Output | Description |
 |--- |--- |
-| onGetBitrates | Emitted when a list of bitrates is retrieved from the file. Sends an Array of `BitrateOption`. |
+| onGetBitrates | Emitted when a list of bitrates is retrieved from the file. Sends an Array of `BitrateOptions`. |
 
 ## HTML Definition
 

@@ -10,13 +10,13 @@ The rest of labels are calculated with the `bitrate / 1000`. You can override th
 
 | Input | Description |
 |--- |--- |
-| bitrates | Array of `BitrateOption` to display in the list. |
+| bitrates | Array of `BitrateOptions` to display in the list. |
 
 ## Outputs
 
 | Output | Description |
 |--- |--- |
-| onBitrateChange | Emitted when the user selects an option on the menu. Sends a `BitrateOption` object. |
+| onBitrateChange | Emitted when the user selects an option on the menu. Sends a `BitrateOptions` object. |
 
 ## HTML Definition
 
