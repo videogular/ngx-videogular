@@ -21,7 +21,7 @@ Open up `app.component.html` and let's add the most basic video player that you 
 If you run `npm run start` this is what you will see.
 
 <div class="intrinsic-container intrinsic-container-16x9">
-    <iframe src="https://videogular.github.io/videogular2-showroom/#/simple-player?standalone=true" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://videogular.github.io/ngx-videogular-showroom/#/simple-player?standalone=true" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Obviously, this is too basic and probably we want to add some custom controls to skin it properly.
@@ -71,7 +71,7 @@ Let's go to add an overlay play and a custom control bar.
 ```
 
 <div class="intrinsic-container intrinsic-container-16x9">
-    <iframe src="https://videogular.github.io/videogular2-showroom/#/single-player?standalone=true" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://videogular.github.io/ngx-videogular-showroom/#/single-player?standalone=true" frameborder="0" allowfullscreen></iframe>
 </div>
 
 This is great! We can add some Videogular components to have a nice UI for our video player. Notice for example that we have two VgScrubBar components. that's because it's a smart component that can work inside and outside VgControlsComponent.

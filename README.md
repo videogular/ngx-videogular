@@ -8,7 +8,7 @@
 
 **Ngx-Videogular is an HTML5 video player for Angular 2.0**. Videogular is a wrapper over the HTML5 video tag, so you can just add whatever you want. This provides a very powerful, but simple to use solution, for everybody.
 
-:tv: [Showcase](https://videogular.github.io/videogular2-showroom/#/)
+:tv: [Showcase](https://videogular.github.io/ngx-videogular-showroom/#/)
 
 :books: [Documentation](https://videogular.github.io/ngx-videogular/docs)
 
