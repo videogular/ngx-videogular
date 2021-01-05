@@ -1,12 +1,12 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    "target": "es5",
-    "lib": ["es2017", "dom"],
+    "target": "es2015",
+    "lib": ["es2018", "dom"],
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
