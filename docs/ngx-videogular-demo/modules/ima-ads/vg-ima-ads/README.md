@@ -13,6 +13,7 @@ Component to display videos and banners with the [Google IMA HTML5 SDK](https://
 | vgNetwork | Optional. String with the network id provided by [Google Publisher Tag](https://developers.google.com/doubleclick-gpt/). |
 | vgUnitPath | Optional. String with the unit path id provided by [Google Publisher Tag](https://developers.google.com/doubleclick-gpt/). |
 | vgSkipButton | Optional. String with a query selector to display a custom skip button. You must set the element with `position` style to `absolute` and `z-index` at least `1`. |
+| vgSkipButtonLocale | Optional. String with the [value](https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/localization#locale-codes) of the language you wish to localize the "Skip Ad" to. Defaults to `'en'` |
 
 ## HTML Definition
 
@@ -24,7 +25,8 @@ Component to display videos and banners with the [Google IMA HTML5 SDK](https://
         [vgNetwork]="'6062'"
         [vgUnitPath]="'iab_vast_samples'"
         [vgAdTagUrl]="'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&correlator='"
-        [vgSkipButton]="'.skip-button'">
+        [vgSkipButton]="'.skip-button'"
+        [vgSkipButtonLocale]="'pt_br'">
     </vg-ima-ads>
 
     <video #myMedia
