@@ -79,3 +79,4 @@ Videogular wants to thank you to this companies for support this project:
 Videogular is a project created by [Raúl Jiménez](https://github.com/Elecash) and released under [MIT license](https://github.com/videogular/ngx-videogular/blob/master/LICENSE).
 
 This project would not be possible without our [team members](https://github.com/orgs/videogular/people) and an [amazing community](https://github.com/videogular/ngx-videogular/graphs/contributors).
+
