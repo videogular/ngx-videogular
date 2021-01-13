@@ -179,7 +179,7 @@ export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
   }
 
   prepareSync() {
-    const canPlayAll: Array<Observable<any>> = [];
+    const canPlayAll: Observable<any>[] = [];
 
     for (const media in this.api.medias) {
       if (this.api.medias[media]) {
@@ -188,19 +188,22 @@ export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
     }
 
     this.canPlayAllSubscription = combineLatest(canPlayAll)
-      .pipe(
-        map((...params) => {
-          const checkReadyState = (event) => {
-            return event.target.readyState === 4;
-          };
-          const allReady: boolean = params.some(checkReadyState);
-
-          if (allReady && !this.syncSubscription) {
-            this.startSync();
-            this.syncSubscription.unsubscribe();
+      .pipe(map((...params) => {
+        const checkReadyState = (event) => {
+          if (!event?.target) {
+            return false;
           }
-        })
-      )
+
+          return event.target.readyState === 4;
+        };
+
+        const allReady: boolean = params.some(checkReadyState);
+
+        if (allReady && !this.syncSubscription) {
+          this.startSync();
+          this.syncSubscription.unsubscribe();
+        }
+      }))
       .subscribe();
   }
 
