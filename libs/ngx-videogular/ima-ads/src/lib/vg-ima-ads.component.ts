@@ -44,9 +44,10 @@ export class VgImaAdsComponent implements OnInit, OnDestroy {
   @Input() vgNetwork: string;
   @Input() vgUnitPath: string;
   @Input() vgCompanion: string;
-  @Input() vgCompanionSize: Array<Number>;
+  @Input() vgCompanionSize: number[];
   @Input() vgAdTagUrl: string;
   @Input() vgSkipButton: string;
+  @Input() vgSkipButtonLocale = 'en';
 
   @Output() onAdStart: EventEmitter<boolean> = new EventEmitter();
   @Output() onAdStop: EventEmitter<boolean> = new EventEmitter();
@@ -119,7 +120,7 @@ export class VgImaAdsComponent implements OnInit, OnDestroy {
   }
 
   initializations() {
-    this.ima = new Ima(this.elem);
+    this.ima = new Ima(this.elem, this.vgSkipButtonLocale);
 
     if (this.vgSkipButton) {
       this.skipButton = document.querySelector(
@@ -332,7 +333,11 @@ export class Ima {
   adsLoaded: boolean;
   currentAd: number;
 
-  constructor(imaAdsElement: HTMLElement) {
+  constructor(imaAdsElement: HTMLElement, imaSkipButtonLocale: string) {
+    if (!!google?.ima['settings'] && imaSkipButtonLocale) {
+      google.ima['settings'].setLocale(imaSkipButtonLocale);
+    }
+
     this.adDisplayContainer = new google.ima.AdDisplayContainer(imaAdsElement);
     this.adsLoader = new google.ima.AdsLoader(this.adDisplayContainer);
 
