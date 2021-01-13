@@ -58,3 +58,5 @@
     * [VgDashDirective](modules/streaming/vg-dash/README.md)
     * [VgHlsDirective](modules/streaming/vg-hls/README.md)
 
+* [ngx-videogular/modulo](modules/modulo/README.md)
+    * [VgModuloComponent](modules/modulo/vg-modulo/README.md)
