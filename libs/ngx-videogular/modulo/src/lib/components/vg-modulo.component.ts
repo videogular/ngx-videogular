@@ -11,13 +11,13 @@ export class VgModuloComponent {
   private _ctx: CanvasRenderingContext2D;
 
   @Input() moduloConfig: ModuloConfig;
-  @Input() audioElement: ElementRef<HTMLAudioElement>;
+  @Input() audioElement: HTMLAudioElement;
 
   @ViewChild("waveCanvas", { static: false }) waveCanvas: ElementRef<HTMLCanvasElement>;
 
   public startVisualizer() {
     if (!this._audioAnalyser) {
-      this._audioAnalyser = new Gondolo(this.audioElement.nativeElement);
+      this._audioAnalyser = new Gondolo(this.audioElement);
 
       const {width, height} = this.moduloConfig.dimensions;
       const canvasElement = this.waveCanvas.nativeElement;
