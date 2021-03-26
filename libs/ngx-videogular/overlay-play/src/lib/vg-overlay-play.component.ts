@@ -73,6 +73,7 @@ import { VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates
 })
 export class VgOverlayPlayComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;
+  @Input() vgSkipOnControlsHidden = false;
   elem: HTMLElement;
   target: any;
 
@@ -135,6 +136,10 @@ export class VgOverlayPlayComponent implements OnInit, OnDestroy {
 
   @HostListener('click')
   onClick() {
+    if (this.vgSkipOnControlsHidden && this.areControlsHidden) {
+      return;
+    }
+
     const state = this.getState();
 
     switch (state) {
