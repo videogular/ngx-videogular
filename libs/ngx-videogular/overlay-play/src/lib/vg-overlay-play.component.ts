@@ -73,12 +73,14 @@ import { VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates
 })
 export class VgOverlayPlayComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;
-  @Input() vgSkipOnControlsHidden = false;
+  @Input() vgSkipIfControlsHidden = false;
+  @Input() vgSkipIfControlsHiddenDelay = 0.5;
   elem: HTMLElement;
   target: any;
 
   isNativeFullscreen = false;
   areControlsHidden = false;
+  areControlsHiddenChangeTime: number = 0;
 
   subscriptions: Subscription[] = [];
 
@@ -131,12 +133,16 @@ export class VgOverlayPlayComponent implements OnInit, OnDestroy {
   }
 
   onHideControls(hidden: boolean) {
+    if (this.vgSkipIfControlsHidden && this.areControlsHidden != hidden) {
+      this.areControlsHiddenChangeTime = Date.now();
+    }
     this.areControlsHidden = hidden;
+
   }
 
   @HostListener('click')
   onClick() {
-    if (this.vgSkipOnControlsHidden && this.areControlsHidden) {
+    if (this.vgSkipIfControlsHidden && (this.areControlsHidden || (Date.now() - this.areControlsHiddenChangeTime) < this.vgSkipIfControlsHiddenDelay * 1000)) {
       return;
     }
 
