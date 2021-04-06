@@ -20,7 +20,7 @@ describe('Videogular Player', () => {
 
     controlsHidden = {
       isHidden: {
-        subscribe: () => {},
+        subscribe: () => { },
       },
     } as VgControlsHiddenService;
 
@@ -48,8 +48,8 @@ describe('Videogular Player', () => {
   describe('onClick', () => {
     beforeEach(() => {
       overlayPlay.target = {
-        play: () => {},
-        pause: () => {},
+        play: () => { },
+        pause: () => { },
       };
     });
 

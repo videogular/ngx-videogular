@@ -53,6 +53,7 @@ export class VgControlsComponent implements OnInit, AfterViewInit, OnDestroy {
 
   mouseMove$: Observable<any>;
   touchStart$: Observable<any>;
+  mouseClick$: Observable<any>;
 
   subscriptions: Subscription[] = [];
   // @ts-ignore
@@ -70,6 +71,9 @@ export class VgControlsComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.touchStart$ = fromEvent(this.API.videogularElement, 'touchstart');
     this.subscriptions.push(this.touchStart$.subscribe(this.show.bind(this)));
+
+    this.mouseClick$ = fromEvent(this.API.videogularElement, 'click');
+    this.subscriptions.push(this.mouseClick$.subscribe(this.show.bind(this)));
 
     if (this.API.isPlayerReady) {
       this.onPlayerReady();
