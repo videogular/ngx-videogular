@@ -163,7 +163,7 @@
     "node-sass": "^4.13.1",
     "np": "6.2.5",
     "nx-semantic-release": "0.1.2",
-    "postcss": "^7.0.27",
+    "postcss": "^8.2.10",
     "postcss-url": "^8.0.0",
     "prettier": "2.2.1",
     "protractor": "~7.0.0",
