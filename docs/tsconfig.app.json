@@ -9,7 +9,6 @@
     "lib": ["es2018", "dom"],
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
   "include": ["**/*.d.ts"],
@@ -20,7 +19,7 @@
     "../libs"
   ],
   "angularCompilerOptions": {
-    "enableIvy": false,
+    "enableIvy": true,
     "preserveWhitespaces": false,
     "resolveJsonModule": true,
     "enableResourceInlining": false
