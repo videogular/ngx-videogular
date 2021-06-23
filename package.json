@@ -124,8 +124,8 @@
     "rxjs": "~7.1.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4",
-    "gitbook-cli": "2.3.2",
-    "gitbook-plugin-ga": "2.0.0",
+    "gitbook-cli": "2.3.0",
+    "gitbook-plugin-ga": "1.0.1",
     "gitbook-plugin-responsive-iframes": "1.0.2"
   },
   "devDependencies": {
@@ -174,5 +174,8 @@
     "typescript": "~4.2.4",
     "validate-commit-msg": "2.12.1",
     "yargs": "15.4.0"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.4"
   }
 }
