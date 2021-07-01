@@ -1,5 +1,6 @@
 import { IMediaElement } from '../../interfaces/i-media-element.interface';
 import { AudioTrackList, VideoTrackList } from '../../interfaces/deprecated-tracks-types.interface';
+import { MSMediaKeyNeededEvent } from '../../interfaces/deprecated-event-types.interface';
 
 export class VgMediaElement implements IMediaElement {
   id: string;

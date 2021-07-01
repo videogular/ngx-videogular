@@ -1,3 +1,4 @@
+import {MSMediaKeyNeededEvent} from './deprecated-event-types.interface';
 import {AudioTrackList, VideoTrackList} from './deprecated-tracks-types.interface';
 
 export interface IMediaElement {

@@ -7,6 +7,7 @@ export * from './lib/interfaces/idrm-license-server.interface';
 export * from './lib/interfaces/ihls-config.interface';
 export * from './lib/interfaces/vg-media-api.interface';
 export * from './lib/interfaces/deprecated-tracks-types.interface';
+export * from './lib/interfaces/deprecated-event-types.interface';
 
 // classes
 export * from './lib/directives/vg-media/vg-media-element';
