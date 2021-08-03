@@ -41,8 +41,17 @@ export class VgUtilsService {
 
   static isiOSDevice() {
     return (
-      navigator.userAgent.match(/ip(hone|ad|od)/i) &&
+      (navigator.userAgent.match(/ip(hone|ad|od)/i) || 
+      VgUtilsService.isIpadOS()) &&
       !navigator.userAgent.match(/(iemobile)[\/\s]?([\w\.]*)/i)
+    );
+  }
+
+  static isIpadOS() {
+    return (
+      navigator.maxTouchPoints && 
+      navigator.maxTouchPoints > 2 &&
+      /MacIntel/.test(navigator.platform)
     );
   }
 
