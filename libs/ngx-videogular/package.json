@@ -1,6 +1,6 @@
 {
   "name": "@videogular/ngx-videogular",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "The HTML5 video player for Angular 2 and successor to videogular2",
   "license": "MIT",
   "publishConfig": {
