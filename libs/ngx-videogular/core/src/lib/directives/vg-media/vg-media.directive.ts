@@ -543,30 +543,24 @@ export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
 
   ngOnDestroy() {
     this.vgMedia.src = '';
-    this.mutationObs.unsubscribe();
-    this.canPlayObs.unsubscribe();
-    this.canPlayThroughObs.unsubscribe();
-    this.loadedMetadataObs.unsubscribe();
-    this.waitingObs.unsubscribe();
-    this.progressObs.unsubscribe();
-    this.endedObs.unsubscribe();
-    this.playingObs.unsubscribe();
-    this.playObs.unsubscribe();
-    this.pauseObs.unsubscribe();
-    this.timeUpdateObs.unsubscribe();
-    this.volumeChangeObs.unsubscribe();
-    this.errorObs.unsubscribe();
+    this.mutationObs?.unsubscribe();
+    this.canPlayObs?.unsubscribe();
+    this.canPlayThroughObs?.unsubscribe();
+    this.loadedMetadataObs?.unsubscribe();
+    this.waitingObs?.unsubscribe();
+    this.progressObs?.unsubscribe();
+    this.endedObs?.unsubscribe();
+    this.playingObs?.unsubscribe();
+    this.playObs?.unsubscribe();
+    this.pauseObs?.unsubscribe();
+    this.timeUpdateObs?.unsubscribe();
+    this.volumeChangeObs?.unsubscribe();
+    this.errorObs?.unsubscribe();
+    this.checkBufferSubscription?.unsubscribe();
+    this.syncSubscription?.unsubscribe();
 
-    if (this.checkBufferSubscription) {
-      this.checkBufferSubscription.unsubscribe();
-    }
-
-    if (this.syncSubscription) {
-      this.syncSubscription.unsubscribe();
-    }
-
-    this.bufferDetected.complete();
-    this.bufferDetected.unsubscribe();
+    this.bufferDetected?.complete();
+    this.bufferDetected?.unsubscribe();
 
     this.api.unregisterMedia(this);
   }
