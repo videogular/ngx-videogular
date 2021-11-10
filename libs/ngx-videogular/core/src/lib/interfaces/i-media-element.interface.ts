@@ -71,11 +71,6 @@ export interface IMediaElement {
    * Specifies the output device id that the audio will be sent to.
    */
   msAudioDeviceType: string;
-  readonly msGraphicsTrustStatus: MSGraphicsTrust;
-  /**
-   * Gets the MSMediaKeys object, which is used for decrypting media data, that is associated with this media element.
-   */
-  readonly msKeys: MSMediaKeys;
   /**
    * Gets or sets whether the DLNA PlayTo device is available.
    */
@@ -175,7 +170,6 @@ export interface IMediaElement {
     effectRequired: boolean,
     config?: any
   ): void;
-  msSetMediaKeys(mediaKeys: MSMediaKeys): void;
   /**
    * Specifies the media protection manager for a given media pipeline.
    */

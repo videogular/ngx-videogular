@@ -23,8 +23,6 @@ export class VgMediaElement implements IMediaElement {
   mediaKeys: MediaKeys | any;
   msAudioCategory: string;
   msAudioDeviceType: string;
-  msGraphicsTrustStatus: MSGraphicsTrust;
-  msKeys: MSMediaKeys;
   msPlayToDisabled: boolean;
   msPlayToPreferredSourceUri: string;
   msPlayToPrimary: boolean;
@@ -77,8 +75,6 @@ export class VgMediaElement implements IMediaElement {
     _effectRequired: boolean,
     _config?: any
   ): void {}
-  // @ts-ignore
-  msSetMediaKeys(mediaKeys: MSMediaKeys): void {}
   // @ts-ignore
   msSetMediaProtectionManager(mediaProtectionManager?: any): void {}
 

@@ -3,11 +3,6 @@
   "projects": {
     "ngx-videogular-demo": {
       "projectType": "application",
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      },
       "root": "docs/ngx-videogular-demo",
       "sourceRoot": "docs/ngx-videogular-demo/src",
       "prefix": "vg",
@@ -111,7 +106,7 @@
       "prefix": "vg",
       "architect": {
         "build": {
-          "builder": "@nrwl/angular:package",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "libs/ngx-videogular/tsconfig.lib.json",
             "project": "libs/ngx-videogular/ng-package.json"
@@ -136,26 +131,10 @@
             "access": "public"
           }
         }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
       }
     }
   },
-  "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "packageManager": "npm"
-  },
   "schematics": {
-    "@nrwl/angular:application": {
-      "unitTestRunner": "karma",
-      "e2eTestRunner": "protractor"
-    },
-    "@nrwl/angular:library": {
-      "unitTestRunner": "karma"
-    },
     "@schematics/angular:component": {
       "style": "scss"
     },
