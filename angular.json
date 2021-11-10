@@ -3,11 +3,6 @@
   "projects": {
     "ngx-videogular-demo": {
       "projectType": "application",
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      },
       "root": "docs/ngx-videogular-demo",
       "sourceRoot": "docs/ngx-videogular-demo/src",
       "prefix": "vg",
@@ -72,16 +67,6 @@
             "browserTarget": "ngx-videogular-demo:build"
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "docs/ngx-videogular-demo/tsconfig.app.json",
-              "docs/ngx-videogular-demo/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!docs/ngx-videogular-demo/**/*"]
-          }
-        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -111,13 +96,6 @@
               "devServerTarget": "ngx-videogular:serve:production"
             }
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "docs/ngx-videogular-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**", "!docs/ngx-videogular-e2e/**/*"]
-          }
         }
       }
     },
@@ -128,7 +106,7 @@
       "prefix": "vg",
       "architect": {
         "build": {
-          "builder": "@nrwl/angular:package",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "libs/ngx-videogular/tsconfig.lib.json",
             "project": "libs/ngx-videogular/ng-package.json"
@@ -137,16 +115,6 @@
             "production": {
               "tsConfig": "libs/ngx-videogular/tsconfig.lib.json"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/ngx-videogular/tsconfig.lib.json",
-              "libs/ngx-videogular/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/ngx-videogular/**/*"]
           }
         },
         "test": {
@@ -163,26 +131,10 @@
             "access": "public"
           }
         }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
       }
     }
   },
-  "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "packageManager": "npm"
-  },
   "schematics": {
-    "@nrwl/angular:application": {
-      "unitTestRunner": "karma",
-      "e2eTestRunner": "protractor"
-    },
-    "@nrwl/angular:library": {
-      "unitTestRunner": "karma"
-    },
     "@schematics/angular:component": {
       "style": "scss"
     },

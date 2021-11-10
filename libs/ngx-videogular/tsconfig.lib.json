@@ -29,7 +29,6 @@
     "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
-    "enableIvy": false,
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "flatModuleOutFile": "index.js",
