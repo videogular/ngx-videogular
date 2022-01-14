@@ -109,13 +109,7 @@ export class VgPlaybackButtonComponent implements OnInit, OnDestroy {
 
     this.playbackIndex = ++this.playbackIndex % this.playbackValues.length;
 
-    if (this.target instanceof VgApiService) {
-      this.target.playbackRate = this.playbackValues[this.playbackIndex];
-    } else {
-      this.target.playbackRate[this.vgFor] = this.playbackValues[
-        this.playbackIndex
-      ];
-    }
+    this.target.playbackRate = this.playbackValues[this.playbackIndex];
 
     this.detectChanges();
   }
