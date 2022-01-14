@@ -302,6 +302,8 @@ export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
     if (this.playPromise) {
       this.playPromise.then(() => {
         this.vgMedia.pause();
+      }).catch(() => {
+        // deliberately empty for the sake of eating console noise
       });
     } else {
       this.vgMedia.pause();
