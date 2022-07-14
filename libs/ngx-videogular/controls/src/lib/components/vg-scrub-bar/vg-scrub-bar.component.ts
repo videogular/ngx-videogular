@@ -145,14 +145,16 @@ export class VgScrubBarComponent implements OnInit, OnDestroy {
     }
   }
 
-  protected seekEnd(offset: number) {
+  protected seekEnd(offset: number | false) {
     this.isSeeking = false;
     if (this.target.canPlay) {
-      const percentage = Math.max(
-        Math.min((offset * 100) / this.elem.scrollWidth, 99.9),
-        0
-      );
-      this.target.seekTime(percentage, true);
+      if (offset !== false) {
+        const percentage = Math.max(
+          Math.min((offset * 100) / this.elem.scrollWidth, 99.9),
+          0
+        );
+        this.target.seekTime(percentage, true);
+      }
       if (this.wasPlaying) {
         this.wasPlaying = false;
         this.target.play();
@@ -210,11 +212,11 @@ export class VgScrubBarComponent implements OnInit, OnDestroy {
   }
 
   @HostListener('touchstart', ['$event'])
-  onTouchStartScrubBar($event: any) {
+  onTouchStartScrubBar(_$event: any) {
     if (this.target) {
       if (!this.target.isLive) {
         if (!this.vgSlider) {
-          this.seekEnd(this.getTouchOffset($event));
+          this.seekEnd(false);
         } else {
           this.seekStart();
         }
