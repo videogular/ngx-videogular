@@ -35,5 +35,6 @@
     "flatModuleId": "@videogular/ngx-videogular",
     "skipTemplateCodegen": true,
     "enableResourceInlining": true,
+    "compilationMode": "partial"
   }
 }
