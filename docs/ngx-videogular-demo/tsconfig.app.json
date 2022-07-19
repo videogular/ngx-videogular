@@ -5,7 +5,7 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    "target": "es2015",
+    "target": "es2020",
     "lib": ["es2018", "dom"],
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,

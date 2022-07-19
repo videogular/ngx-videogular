@@ -141,6 +141,5 @@
     "@schematics/angular:library": {
       "style": "scss"
     }
-  },
-  "defaultProject": "ngx-videogular"
+  }
 }
