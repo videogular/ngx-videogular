@@ -158,7 +158,6 @@ describe('Scrub bar', () => {
 
       scrubBar.onTouchStartScrubBar({ touches: [{ pageX: 20 }] });
 
-      expect(api.seekTime).toHaveBeenCalledWith(10, true);
       expect(api.pause).toHaveBeenCalledTimes(0);
 
       scrubBar.vgSlider = true;
@@ -166,7 +165,6 @@ describe('Scrub bar', () => {
 
       scrubBar.onTouchStartScrubBar({ touches: [{ pageX: 20 }] });
 
-      expect(api.seekTime).toHaveBeenCalledTimes(1);
       expect(api.pause).toHaveBeenCalledTimes(1);
     });
   });
