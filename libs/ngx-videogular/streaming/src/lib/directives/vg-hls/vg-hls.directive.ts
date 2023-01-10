@@ -29,6 +29,7 @@ declare let Hls: {
 export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
   @Input() vgHls: string;
   @Input() vgHlsHeaders: { [key: string]: string } = {};
+  @Input() config: IHLSConfig;
 
   @Output() onGetBitrates: EventEmitter<BitrateOptions[]> = new EventEmitter();
 
@@ -37,7 +38,6 @@ export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
   hls: any;
   preload: boolean;
   crossorigin: string;
-  config: IHLSConfig;
 
   subscriptions: Subscription[] = [];
 
@@ -66,20 +66,20 @@ export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
 
     this.config = {
       autoStartLoad: this.preload,
+      xhrSetup: (xhr: {
+        withCredentials: boolean;
+        setRequestHeader: (arg0: string, arg1: string) => void;
+      }) => {
+        // Send cookies
+        if (this.crossorigin === 'use-credentials') {
+          xhr.withCredentials = true;
+        }
+        for (const key of Object.keys(this.vgHlsHeaders)) {
+          xhr.setRequestHeader(key, this.vgHlsHeaders[key]);
+        }
+      },
+      ...this.config,
     } as IHLSConfig;
-    // @ts-ignore
-    this.config.xhrSetup = (xhr: {
-      withCredentials: boolean;
-      setRequestHeader: (arg0: string, arg1: string) => void;
-    }) => {
-      // Send cookies
-      if (this.crossorigin === 'use-credentials') {
-        xhr.withCredentials = true;
-      }
-      for (const key of Object.keys(this.vgHlsHeaders)) {
-        xhr.setRequestHeader(key, this.vgHlsHeaders[key]);
-      }
-    };
 
     this.createPlayer();
 
