@@ -55,7 +55,7 @@ export class VgPlayerComponent implements AfterContentInit, OnDestroy {
   @Output() onPlayerReady: EventEmitter<VgApiService> = new EventEmitter<VgApiService>();
   @Output() onMediaReady: EventEmitter<any> = new EventEmitter();
 
-  @ContentChildren(VgMediaDirective) medias: QueryList<VgMediaDirective>;
+  @ContentChildren(VgMediaDirective, { descendants: true }) medias: QueryList<VgMediaDirective>;
 
   subscriptions: Subscription[] = [];
 
