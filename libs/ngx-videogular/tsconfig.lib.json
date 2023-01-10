@@ -3,7 +3,6 @@
   "compilerOptions": {
     "outDir": "../../dist/libs/ngx-videogular",
     "baseUrl": ".",
-    "target": "es2020",
     "module": "esnext",
     "stripInternal": false,
     "moduleResolution": "node",
