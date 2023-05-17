@@ -1,6 +1,5 @@
 # Videogular
 
-[![travis build](https://travis-ci.org/videogular/ngx-videogular.svg?branch=master)](https://travis-ci.org/videogular/ngx-videogular)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@videogular/ngx-videogular)
 ![npm](https://img.shields.io/npm/dy/@videogular/ngx-videogular)
@@ -17,7 +16,15 @@
 Since `videogular2` is unmaintained, we suggest moving to `@videogular/ngx-videogular`. </br>
 You can check out the [migration guide here](https://videogular.github.io/ngx-videogular/docs/migrating-from-videogular2/).
 
-### 48% reduction on bundle size? Ivy Support? </br> All of that and more!
+### 48% smaller bundle size? Ivy Support? </br> All of that and more!
+
+## Version Compatibility
+
+| Ngx-Videogular | Angular          | Node
+|----------------|------------------|--------------------------------------
+| <= ^6.0.0      | < 15.0.0         | < 16.0.0
+| ^7.0.0 < 8.0.0 | ^15.0.0 < 16.0.0 | ^14.20.0 \|\| ^16.13.0 \|\| ^18.10.0
+| ^8.0.0         | >= 16.0.0        | ^16.13.0 \|\| ^18.10.0
 
 ## DashJS 2.X.X deprecation
 
@@ -28,7 +35,11 @@ For DashJS v2 compatiblity, please use @videogular/ngx-videogular version < 2.0.
 
 To get up and running quickly, check out the [getting started guide](https://videogular.github.io/ngx-videogular/docs/getting-started/).
 
-### NPM commands
+## Quick template
+
+[Stackblitz Template](https://stackblitz.com/edit/angular-videogular?file=app%2Fhello.component.ts)
+
+## Building and Testing
 
 Run `start` to compile the project, execute tests and check coverage:
 
@@ -62,10 +73,6 @@ npm install
 npm run build
 npm start
 ```
-
-## Quick template
-
-[Stackblitz Template](https://stackblitz.com/edit/angular-videogular?file=app%2Fhello.component.ts)
 
 ## Supported by
 
