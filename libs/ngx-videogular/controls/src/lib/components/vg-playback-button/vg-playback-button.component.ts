@@ -18,7 +18,7 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
     class="button"
     tabindex="0"
     role="button"
-    aria-label="playback speed button"
+    aria-label="playback speed"
     [attr.aria-valuetext]="ariaValue"
   >
     {{ getPlaybackRate() }}x
