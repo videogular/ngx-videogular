@@ -18,7 +18,7 @@ import { VgApiService, VgFullscreenApiService } from '@videogular/ngx-videogular
     [class.vg-icon-fullscreen_exit]="isFullscreen"
     tabindex="0"
     role="button"
-    aria-label="fullscreen button"
+    aria-label="fullscreen"
     [attr.aria-valuetext]="ariaValue"
   ></div>`,
   styles: [

@@ -21,7 +21,7 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
     [class.vg-icon-volume_off]="getVolume() === 0"
     tabindex="0"
     role="button"
-    aria-label="mute button"
+    aria-label="mute"
     [attr.aria-valuetext]="ariaValue"
   ></div>`,
   styles: [
