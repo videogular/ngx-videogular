@@ -15,7 +15,7 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "lib": ["dom", "es2015", "es5"],
+    "lib": ["es2022", "dom"],
     "types": [],
     "paths": {
       "@videogular/ngx-videogular/*": ["./*/src/index"]
@@ -31,7 +31,6 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "flatModuleOutFile": "index.js",
-    "flatModuleId": "@videogular/ngx-videogular",
     "skipTemplateCodegen": true,
     "enableResourceInlining": true,
     "compilationMode": "partial"
