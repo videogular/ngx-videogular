@@ -1,6 +1,6 @@
 {
   "name": "ngx-videogular",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "license": "MIT",
   "description": "The HTML5 video player for Angular 2 and successor to videogular2",
   "author": {
@@ -29,7 +29,6 @@
     "javascript"
   ],
   "scripts": {
-    "postinstall": "ngcc",
     "test": "ng test ngx-videogular",
     "lint": "ng lint",
     "e2e": "ng e2e",
