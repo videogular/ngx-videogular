@@ -125,15 +125,14 @@ export class VgFullscreenApiService {
     this.onChangeFullscreen.emit(this.isFullscreen);
   }
 
-  toggleFullscreen(element: any = null) {
+  toggleFullscreen(element: any = null): Promise<void> {
     if (this.isFullscreen) {
-      this.exit();
-    } else {
-      this.request(element);
+      return this.exit();
     }
+    return this.request(element);
   }
 
-  request(elem: any) {
+  request(elem: any): Promise<void> {
     if (!elem) {
       elem = this.videogularElement;
     }
@@ -154,24 +153,25 @@ export class VgFullscreenApiService {
           elem = this.medias.toArray()[0].elem;
         }
 
-        this.enterElementInFullScreen(elem);
-      } else {
-        this.enterElementInFullScreen(this.videogularElement);
+        return this.enterElementInFullScreen(elem);
       }
+      return this.enterElementInFullScreen(this.videogularElement);
     }
+    return Promise.resolve();
   }
 
-  enterElementInFullScreen(elem: any) {
-    elem[this.polyfill.request]();
+  enterElementInFullScreen(elem: any): Promise<void> {
+    return elem[this.polyfill.request]();
   }
 
-  exit() {
+  exit(): Promise<void> {
     this.isFullscreen = false;
     this.onChangeFullscreen.emit(false);
 
     // Exit from native fullscreen
     if (this.isAvailable && this.nativeFullscreen) {
-      document[this.polyfill.exit]();
+      return document[this.polyfill.exit]();
     }
+    return Promise.resolve();
   }
 }
