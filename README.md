@@ -20,11 +20,14 @@ You can check out the [migration guide here](https://videogular.github.io/ngx-vi
 
 ## Version Compatibility
 
-| Ngx-Videogular | Angular          | Node
-|----------------|------------------|--------------------------------------
-| <= ^6.0.0      | < 15.0.0         | < 16.0.0
-| ^7.0.0 < 8.0.0 | ^15.0.0 < 16.0.0 | ^14.20.0 \|\| ^16.13.0 \|\| ^18.10.0
-| ^8.0.0         | >= 16.0.0        | ^16.13.0 \|\| ^18.10.0
+| Ngx-Videogular | Angular          | Node                                 |
+| -------------- | ---------------- | ------------------------------------ |
+| <= ^6.0.0      | < 15.0.0         | < 16.0.0                             |
+| ^7.0.0 < 8.0.0 | ^15.0.0 < 16.0.0 | ^14.20.0 \|\| ^16.13.0 \|\| ^18.10.0 |
+| ^8.0.0         | >= 16.0.0        | ^16.13.0 \|\| ^18.10.0               |
+| ^9.0.0         | >= ^17.0.0       | ^18.10.0                             |
+| ^10.0.0        | >= ^18.0.0       | ^18.10.0                             |
+| ^19.0.0        | >= ^19.0.0       | ^20.19.0                             |
 
 ## DashJS 2.X.X deprecation
 
@@ -86,4 +89,3 @@ Videogular wants to thank you to this companies for support this project:
 Videogular is a project created by [Raúl Jiménez](https://github.com/Elecash) and released under [MIT license](https://github.com/videogular/ngx-videogular/blob/master/LICENSE).
 
 This project would not be possible without our [team members](https://github.com/orgs/videogular/people) and an [amazing community](https://github.com/videogular/ngx-videogular/graphs/contributors).
-
