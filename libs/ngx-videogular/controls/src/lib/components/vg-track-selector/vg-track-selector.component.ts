@@ -23,7 +23,7 @@ export interface Option {
       <div
         class="track-selected"
         [class.vg-icon-closed_caption]="!trackSelected"
-      >
+        >
         {{ trackSelected || '' }}
       </div>
       <select
@@ -32,17 +32,18 @@ export interface Option {
         tabindex="0"
         aria-label="track selector"
         [attr.aria-valuetext]="ariaValue"
-      >
-        <option
-          *ngFor="let track of tracks"
-          [value]="track.id"
-          [selected]="track.selected === true"
         >
-          {{ track.label }}
-        </option>
+        @for (track of tracks; track track) {
+          <option
+            [value]="track.id"
+            [selected]="track.selected === true"
+            >
+            {{ track.label }}
+          </option>
+        }
       </select>
     </div>
-  `,
+    `,
     styles: [
         `
       vg-track-selector {

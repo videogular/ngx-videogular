@@ -27,17 +27,18 @@ import { VgApiService, BitrateOptions } from '@videogular/ngx-videogular/core';
         tabindex="0"
         aria-label="quality selector"
         [attr.aria-valuetext]="ariaValue"
-      >
-        <option
-          *ngFor="let bitrate of bitrates"
-          [value]="bitrate.qualityIndex"
-          [selected]="bitrate.qualityIndex === bitrateSelected?.qualityIndex"
         >
-          {{ bitrate.label }}
-        </option>
+        @for (bitrate of bitrates; track bitrate) {
+          <option
+            [value]="bitrate.qualityIndex"
+            [selected]="bitrate.qualityIndex === bitrateSelected?.qualityIndex"
+            >
+            {{ bitrate.label }}
+          </option>
+        }
       </select>
     </div>
-  `,
+    `,
     styles: [
         `
       vg-quality-selector {
