@@ -11,9 +11,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService, VgStates } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-play-pause',
-  encapsulation: ViewEncapsulation.None,
-  template: ` <div
+    selector: 'vg-play-pause',
+    encapsulation: ViewEncapsulation.None,
+    template: ` <div
     class="icon"
     [class.vg-icon-pause]="getState() === 'playing'"
     [class.vg-icon-play_arrow]="
@@ -24,8 +24,8 @@ import { VgApiService, VgStates } from '@videogular/ngx-videogular/core';
     [attr.aria-label]="getState() === 'paused' ? 'play' : 'pause'"
     [attr.aria-valuetext]="ariaValue"
   ></div>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-play-pause {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -45,7 +45,8 @@ import { VgApiService, VgStates } from '@videogular/ngx-videogular/core';
         pointer-events: none;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgPlayPauseComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

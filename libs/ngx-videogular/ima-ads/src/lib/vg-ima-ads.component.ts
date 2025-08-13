@@ -19,11 +19,11 @@ import {
 } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-ima-ads',
-  encapsulation: ViewEncapsulation.None,
-  template: `<div class="vg-ima-ads"></div>`,
-  styles: [
-    `
+    selector: 'vg-ima-ads',
+    encapsulation: ViewEncapsulation.None,
+    template: `<div class="vg-ima-ads"></div>`,
+    styles: [
+        `
       vg-ima-ads {
         position: absolute;
         width: 100%;
@@ -37,7 +37,8 @@ import {
         pointer-events: none;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgImaAdsComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

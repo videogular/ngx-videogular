@@ -12,9 +12,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-overlay-play',
-  encapsulation: ViewEncapsulation.None,
-  template: `<div
+    selector: 'vg-overlay-play',
+    encapsulation: ViewEncapsulation.None,
+    template: `<div
     class="vg-overlay-play"
     [class.native-fullscreen]="isNativeFullscreen"
     [class.controls-hidden]="areControlsHidden"
@@ -24,8 +24,8 @@ import { VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates
       [class.vg-icon-play_arrow]="getState() !== 'playing'"
     ></div>
   </div>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-overlay-play {
         z-index: 200;
       }
@@ -69,7 +69,8 @@ import { VgApiService, VgFullscreenApiService, VgControlsHiddenService, VgStates
         transform: scale(1.2);
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgOverlayPlayComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

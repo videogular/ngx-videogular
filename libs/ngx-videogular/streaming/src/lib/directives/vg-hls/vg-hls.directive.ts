@@ -23,8 +23,9 @@ declare let Hls: {
 };
 
 @Directive({
-  selector: '[vgHls]',
-  exportAs: 'vgHls',
+    selector: '[vgHls]',
+    exportAs: 'vgHls',
+    standalone: false
 })
 export class VgHlsDirective implements OnInit, OnChanges, OnDestroy {
   @Input() vgHls: string;

@@ -7,9 +7,10 @@ export interface IVgDemo {
 }
 
 @Component({
-  selector: "ngx-videogular-root",
-  templateUrl: "./app.component.html",
-  encapsulation: ViewEncapsulation.None
+    selector: "ngx-videogular-root",
+    templateUrl: "./app.component.html",
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class AppComponent implements OnInit {
   title = "ngx-videogular";

@@ -12,7 +12,10 @@ import { Subscription } from 'rxjs';
 import { VgApiService } from '@videogular/ngx-videogular/core';
 
 // Workaround until we can use UTC with Angular Date Pipe
-@Pipe({ name: 'vgUtc' })
+@Pipe({
+    name: 'vgUtc',
+    standalone: false
+})
 export class VgUtcPipe implements PipeTransform {
   transform(value: number, format: string): string {
     let date = new Date(value);
@@ -40,15 +43,15 @@ export class VgUtcPipe implements PipeTransform {
 }
 
 @Component({
-  selector: 'vg-time-display',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'vg-time-display',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <span *ngIf="target?.isLive">LIVE</span>
     <span *ngIf="!target?.isLive">{{ getTime() | vgUtc: vgFormat }}</span>
     <ng-content></ng-content>
   `,
-  styles: [
-    `
+    styles: [
+        `
       vg-time-display {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -66,7 +69,8 @@ export class VgUtcPipe implements PipeTransform {
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgTimeDisplayComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

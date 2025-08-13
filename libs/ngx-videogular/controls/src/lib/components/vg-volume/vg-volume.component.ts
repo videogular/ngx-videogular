@@ -12,9 +12,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-volume',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'vg-volume',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <div
       #volumeBar
       class="volumeBar"
@@ -42,8 +42,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
       </div>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       vg-volume {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -95,7 +95,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
         transition: none;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgVolumeComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

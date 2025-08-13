@@ -15,9 +15,9 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
 
 // tslint:disable-next-line: no-conflicting-lifecycle
 @Component({
-  selector: 'vg-scrub-bar-cue-points',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'vg-scrub-bar-cue-points',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <div class="cue-point-container">
       <span
         *ngFor="let cp of cuePoints"
@@ -27,8 +27,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
       ></span>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       vg-scrub-bar-cue-points {
         display: flex;
         width: 100%;
@@ -46,7 +46,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
         top: calc(50% - 3px);
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgScrubBarCuePointsComponent
   implements OnInit, OnChanges, OnDestroy, DoCheck {

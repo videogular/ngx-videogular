@@ -10,12 +10,12 @@ import { Subscription } from 'rxjs';
 import { VgApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-scrub-bar-current-time',
-  encapsulation: ViewEncapsulation.None,
-  template: `<div class="background" [style.width]="getPercentage()"></div>
+    selector: 'vg-scrub-bar-current-time',
+    encapsulation: ViewEncapsulation.None,
+    template: `<div class="background" [style.width]="getPercentage()"></div>
     <span class="slider" *ngIf="vgSlider"></span>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-scrub-bar-current-time {
         display: flex;
         width: 100%;
@@ -49,7 +49,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
         margin-left: -10px;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgScrubBarCurrentTimeComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

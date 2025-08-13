@@ -16,9 +16,9 @@ export interface Option {
 }
 
 @Component({
-  selector: 'vg-track-selector',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'vg-track-selector',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <div class="container">
       <div
         class="track-selected"
@@ -43,8 +43,8 @@ export interface Option {
       </select>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       vg-track-selector {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -99,7 +99,8 @@ export interface Option {
         width: 100%;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgTrackSelectorComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

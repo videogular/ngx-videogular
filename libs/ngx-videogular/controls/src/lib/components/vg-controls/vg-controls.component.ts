@@ -13,11 +13,11 @@ import { fromEvent } from 'rxjs';
 import { VgApiService, VgControlsHiddenService, VgStates } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-controls',
-  encapsulation: ViewEncapsulation.None,
-  template: `<ng-content></ng-content>`,
-  styles: [
-    `
+    selector: 'vg-controls',
+    encapsulation: ViewEncapsulation.None,
+    template: `<ng-content></ng-content>`,
+    styles: [
+        `
       vg-controls {
         position: absolute;
         display: flex;
@@ -36,7 +36,8 @@ import { VgApiService, VgControlsHiddenService, VgStates } from '@videogular/ngx
         bottom: -50px;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgControlsComponent implements OnInit, AfterViewInit, OnDestroy {
   elem: HTMLElement;

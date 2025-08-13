@@ -12,9 +12,9 @@ import { Subscription } from 'rxjs';
 import { VgControlsHiddenService, VgApiService, VgStates } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-scrub-bar',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'vg-scrub-bar',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <div
       class="scrubBar"
       tabindex="0"
@@ -29,8 +29,8 @@ import { VgControlsHiddenService, VgApiService, VgStates } from '@videogular/ngx
       <ng-content></ng-content>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       vg-scrub-bar {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -82,7 +82,8 @@ import { VgControlsHiddenService, VgApiService, VgStates } from '@videogular/ngx
         opacity: initial;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgScrubBarComponent implements OnInit, OnDestroy {
   @HostBinding('class.hide') hideScrubBar = false;

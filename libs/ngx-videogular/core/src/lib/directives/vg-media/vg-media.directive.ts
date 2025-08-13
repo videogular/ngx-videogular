@@ -24,7 +24,8 @@ import { VgStates } from '../../services/states/vg-states.service';
 import { VgEvents } from '../../services/events/vg-events.service';
 
 @Directive({
-  selector: '[vgMedia]',
+    selector: '[vgMedia]',
+    standalone: false
 })
 export class VgMediaDirective implements OnInit, OnDestroy, IPlayable {
   elem: any;

@@ -11,15 +11,15 @@ import { Subscription } from 'rxjs';
 import { IPlayable, VgApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-buffering',
-  encapsulation: ViewEncapsulation.None,
-  template: `<div class="vg-buffering">
+    selector: 'vg-buffering',
+    encapsulation: ViewEncapsulation.None,
+    template: `<div class="vg-buffering">
     <div class="bufferingContainer">
       <div class="loadingSpinner"></div>
     </div>
   </div>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-buffering {
         display: none;
         z-index: 201;
@@ -98,7 +98,8 @@ import { IPlayable, VgApiService } from '@videogular/ngx-videogular/core';
         }
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgBufferingComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;
