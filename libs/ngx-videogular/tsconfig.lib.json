@@ -5,7 +5,7 @@
     "baseUrl": ".",
     "module": "esnext",
     "stripInternal": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "newLine": "lf",
     "declaration": true,
     "importHelpers": true,
@@ -15,10 +15,15 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "lib": ["es2022", "dom"],
+    "lib": [
+      "es2022",
+      "dom"
+    ],
     "types": [],
     "paths": {
-      "@videogular/ngx-videogular/*": ["./*/src/index"]
+      "@videogular/ngx-videogular/*": [
+        "./*/src/index"
+      ]
     }
   },
   "files": ["public-api.ts"],

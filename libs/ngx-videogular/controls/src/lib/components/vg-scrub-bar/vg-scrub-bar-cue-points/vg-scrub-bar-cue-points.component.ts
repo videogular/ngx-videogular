@@ -19,14 +19,15 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
     encapsulation: ViewEncapsulation.None,
     template: `
     <div class="cue-point-container">
-      <span
-        *ngFor="let cp of cuePoints"
-        [style.width]="cp.$$style?.width"
-        [style.left]="cp.$$style?.left"
-        class="cue-point"
-      ></span>
+      @for (cp of cuePoints; track cp) {
+        <span
+          [style.width]="cp.$$style?.width"
+          [style.left]="cp.$$style?.left"
+          class="cue-point"
+        ></span>
+      }
     </div>
-  `,
+    `,
     styles: [
         `
       vg-scrub-bar-cue-points {

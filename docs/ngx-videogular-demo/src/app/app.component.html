@@ -18,7 +18,7 @@
   <iframe
     [src]="currentDemo"
     allowfullscreen="true"
-    scrolling="no"></iframe>
+  scrolling="no"></iframe>
 
   <div class="see-demo">
     <span class="see-demo-label">Live Demo</span>
@@ -36,15 +36,16 @@
 </section>
 
 <ul class="demo-buttons" [ngClass]="{ 'show': isDemoEnabled }">
-  <ng-container *ngIf="demos">
-    <li *ngFor="let demo of demos">
-      <a
-        (click)="updateDemo(demo)"
-        class="hero-button hero-button__dark hero-button__arrow"
-        [ngClass]="{'hero-button__selected': demo === selectedDemo}">
-
-        {{ demo.label }}
-      </a>
-    </li>
-  </ng-container>
+  @if (demos) {
+    @for (demo of demos; track demo) {
+      <li>
+        <a
+          (click)="updateDemo(demo)"
+          class="hero-button hero-button__dark hero-button__arrow"
+          [ngClass]="{'hero-button__selected': demo === selectedDemo}">
+          {{ demo.label }}
+        </a>
+      </li>
+    }
+  }
 </ul>

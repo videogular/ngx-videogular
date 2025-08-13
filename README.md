@@ -28,6 +28,7 @@ You can check out the [migration guide here](https://videogular.github.io/ngx-vi
 | ^9.0.0         | >= ^17.0.0       | ^18.10.0                             |
 | ^10.0.0        | >= ^18.0.0       | ^18.10.0                             |
 | ^19.0.0        | >= ^19.0.0       | ^20.19.0                             |
+| ^20.0.0        | >= ^20.0.0       | ^20.19.0                             |
 
 ## DashJS 2.X.X deprecation
 

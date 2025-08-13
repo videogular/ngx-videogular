@@ -46,10 +46,14 @@ export class VgUtcPipe implements PipeTransform {
     selector: 'vg-time-display',
     encapsulation: ViewEncapsulation.None,
     template: `
-    <span *ngIf="target?.isLive">LIVE</span>
-    <span *ngIf="!target?.isLive">{{ getTime() | vgUtc: vgFormat }}</span>
+    @if (target?.isLive) {
+      <span>LIVE</span>
+    }
+    @if (!target?.isLive) {
+      <span>{{ getTime() | vgUtc: vgFormat }}</span>
+    }
     <ng-content></ng-content>
-  `,
+    `,
     styles: [
         `
       vg-time-display {

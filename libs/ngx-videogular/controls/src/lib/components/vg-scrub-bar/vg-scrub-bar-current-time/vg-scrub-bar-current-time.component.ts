@@ -13,7 +13,9 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
     selector: 'vg-scrub-bar-current-time',
     encapsulation: ViewEncapsulation.None,
     template: `<div class="background" [style.width]="getPercentage()"></div>
-    <span class="slider" *ngIf="vgSlider"></span>`,
+    @if (vgSlider) {
+      <span class="slider"></span>
+    }`,
     styles: [
         `
       vg-scrub-bar-current-time {
