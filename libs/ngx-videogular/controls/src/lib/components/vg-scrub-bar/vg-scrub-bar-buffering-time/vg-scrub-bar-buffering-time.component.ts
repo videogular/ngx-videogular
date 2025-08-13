@@ -10,11 +10,11 @@ import { Subscription } from 'rxjs';
 import { VgApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-scrub-bar-buffering-time',
-  encapsulation: ViewEncapsulation.None,
-  template: `<div class="background" [style.width]="getBufferTime()"></div>`,
-  styles: [
-    `
+    selector: 'vg-scrub-bar-buffering-time',
+    encapsulation: ViewEncapsulation.None,
+    template: `<div class="background" [style.width]="getBufferTime()"></div>`,
+    styles: [
+        `
       vg-scrub-bar-buffering-time {
         display: flex;
         width: 100%;
@@ -35,7 +35,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
         border-radius: 2px;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgScrubBarBufferingTimeComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

@@ -11,7 +11,8 @@ import { Subscription, Observable, fromEvent } from 'rxjs';
 import { VgEvents } from '../../services/events/vg-events.service';
 
 @Directive({
-  selector: '[vgCuePoints]',
+    selector: '[vgCuePoints]',
+    standalone: false
 })
 export class VgCuePointsDirective implements OnInit, OnDestroy, DoCheck {
   @Output() onEnterCuePoint: EventEmitter<any> = new EventEmitter();

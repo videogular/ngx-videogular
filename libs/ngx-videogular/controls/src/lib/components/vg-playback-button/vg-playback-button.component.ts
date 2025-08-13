@@ -12,9 +12,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-playback-button',
-  encapsulation: ViewEncapsulation.None,
-  template: ` <span
+    selector: 'vg-playback-button',
+    encapsulation: ViewEncapsulation.None,
+    template: ` <span
     class="button"
     tabindex="0"
     role="button"
@@ -23,8 +23,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
   >
     {{ getPlaybackRate() }}x
   </span>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-playback-button {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -47,7 +47,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
         width: 50px;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgPlaybackButtonComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

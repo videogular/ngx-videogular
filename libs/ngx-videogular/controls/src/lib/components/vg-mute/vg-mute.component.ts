@@ -11,9 +11,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-mute',
-  encapsulation: ViewEncapsulation.None,
-  template: ` <div
+    selector: 'vg-mute',
+    encapsulation: ViewEncapsulation.None,
+    template: ` <div
     class="icon"
     [class.vg-icon-volume_up]="getVolume() >= 0.75"
     [class.vg-icon-volume_down]="getVolume() >= 0.25 && getVolume() < 0.75"
@@ -24,8 +24,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
     aria-label="mute"
     [attr.aria-valuetext]="ariaValue"
   ></div>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-mute {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -45,7 +45,8 @@ import { VgApiService } from '@videogular/ngx-videogular/core';
         pointer-events: none;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgMuteComponent implements OnInit, OnDestroy {
   @Input() vgFor: string;

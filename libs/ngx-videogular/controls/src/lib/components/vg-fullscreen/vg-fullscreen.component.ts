@@ -10,9 +10,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService, VgFullscreenApiService } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-fullscreen',
-  encapsulation: ViewEncapsulation.None,
-  template: ` <div
+    selector: 'vg-fullscreen',
+    encapsulation: ViewEncapsulation.None,
+    template: ` <div
     class="icon"
     [class.vg-icon-fullscreen]="!isFullscreen"
     [class.vg-icon-fullscreen_exit]="isFullscreen"
@@ -21,8 +21,8 @@ import { VgApiService, VgFullscreenApiService } from '@videogular/ngx-videogular
     aria-label="fullscreen"
     [attr.aria-valuetext]="ariaValue"
   ></div>`,
-  styles: [
-    `
+    styles: [
+        `
       vg-fullscreen {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -42,7 +42,8 @@ import { VgApiService, VgFullscreenApiService } from '@videogular/ngx-videogular
         pointer-events: none;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgFullscreenComponent implements OnInit, OnDestroy {
   elem: HTMLElement;

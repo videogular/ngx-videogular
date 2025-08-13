@@ -82,7 +82,7 @@ describe('Videogular Player', () => {
 });
 
 @Component({
-  template: `
+    template: `
     <vg-player>
       <video vg-media id="singleVideo" preload="auto" controls>
         <source
@@ -100,6 +100,7 @@ describe('Videogular Player', () => {
       </video>
     </vg-player>
   `,
-  providers: [VgApiService],
+    providers: [VgApiService],
+    standalone: false
 })
 class VgPlayerTest {}

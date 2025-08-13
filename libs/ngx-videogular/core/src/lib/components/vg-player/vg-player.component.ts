@@ -18,11 +18,11 @@ import { VgMediaDirective } from '../../directives/vg-media/vg-media.directive';
 import { VgUtilsService } from '../../services/vg-utils/vg-utils.service';
 
 @Component({
-  selector: 'vg-player',
-  encapsulation: ViewEncapsulation.None,
-  template: `<ng-content></ng-content>`,
-  styles: [
-    `
+    selector: 'vg-player',
+    encapsulation: ViewEncapsulation.None,
+    template: `<ng-content></ng-content>`,
+    styles: [
+        `
       vg-player {
         font-family: 'videogular';
         position: relative;
@@ -41,8 +41,9 @@ import { VgUtilsService } from '../../services/vg-utils/vg-utils.service';
         cursor: none;
       }
     `,
-  ],
-  providers: [VgApiService, VgFullscreenApiService, VgControlsHiddenService],
+    ],
+    providers: [VgApiService, VgFullscreenApiService, VgControlsHiddenService],
+    standalone: false
 })
 export class VgPlayerComponent implements AfterContentInit, OnDestroy {
   elem: HTMLElement;

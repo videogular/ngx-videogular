@@ -3,8 +3,9 @@ import { ModuloConfig } from '../interfaces/modulo-config.interface';
 import { Gondolo } from "../utils/modulo";
 
 @Component({
-  selector: "vg-modulo",
-  templateUrl: "./vg-modulo.component.html",
+    selector: "vg-modulo",
+    templateUrl: "./vg-modulo.component.html",
+    standalone: false
 })
 export class VgModuloComponent {
   private _audioAnalyser: Gondolo;

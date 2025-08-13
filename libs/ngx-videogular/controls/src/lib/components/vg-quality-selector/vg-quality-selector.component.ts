@@ -14,9 +14,9 @@ import { Subscription } from 'rxjs';
 import { VgApiService, BitrateOptions } from '@videogular/ngx-videogular/core';
 
 @Component({
-  selector: 'vg-quality-selector',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'vg-quality-selector',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <div class="container">
       <div class="quality-selected" [class.vg-icon-hd]="!bitrateSelected">
         {{ bitrateSelected?.label }}
@@ -38,8 +38,8 @@ import { VgApiService, BitrateOptions } from '@videogular/ngx-videogular/core';
       </select>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       vg-quality-selector {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -94,7 +94,8 @@ import { VgApiService, BitrateOptions } from '@videogular/ngx-videogular/core';
         width: 100%;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class VgQualitySelectorComponent
   implements OnInit, OnChanges, OnDestroy {

@@ -25,8 +25,9 @@ declare let dashjs: {
 };
 
 @Directive({
-  selector: '[vgDash]',
-  exportAs: 'vgDash',
+    selector: '[vgDash]',
+    exportAs: 'vgDash',
+    standalone: false
 })
 export class VgDashDirective implements OnInit, OnChanges, OnDestroy {
   @Input() vgDash: string;
